@@ -113,7 +113,7 @@ appears on the left side of the page.
 
 #avatar {
     /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
-    background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+    background-image: url('https://i.imgsafe.org/8b9f77632f.png');
     
     /* make a square container */
     height: 120px;
