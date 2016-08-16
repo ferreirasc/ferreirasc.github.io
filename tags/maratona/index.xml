@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maratona on Leonardo Ferreira</title>
+    <link>https://ferreirasc.github.io/tags/maratona/</link>
+    <description>Recent content in Maratona on Leonardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 15 Aug 2016 17:42:03 +0000</lastBuildDate>
+    <atom:link href="https://ferreirasc.github.io/tags/maratona/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Instalando o sistema BOCA Online Contest</title>
+      <link>https://ferreirasc.github.io/post/manual_boca/</link>
+      <pubDate>Mon, 15 Aug 2016 17:42:03 +0000</pubDate>
+      
+      <guid>https://ferreirasc.github.io/post/manual_boca/</guid>
+      <description>
+
+&lt;p&gt;Neste tutorial estarei demonstrando, passo-a-passo, como instalar e configurar o sistema BOCA Online Contest Administrator, utilizado para criar e gerenciar ambientes para competições de programação.&lt;/p&gt;
+
+&lt;h2 id=&#34;procedimento&#34;&gt;Procedimento&lt;/h2&gt;
+
+&lt;p&gt;Com privilégios de root sempre, faça:&lt;/p&gt;
+
+&lt;p&gt;1 - Acesse o site &lt;a href=&#34;http://www.ime.usp.br/~cassio/boca/&#34;&gt;http://www.ime.usp.br/~cassio/boca/&lt;/a&gt; e extraia o script &amp;ldquo;installv2.sh&amp;rdquo;. Caso o script esteja no link &amp;ldquo;&lt;a href=&#34;http://www.ime.usp.br/~cassio/boca/download.php?filename=installv2.sh&amp;quot;:&#34;&gt;http://www.ime.usp.br/~cassio/boca/download.php?filename=installv2.sh&amp;quot;:&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# wget --output-document=installv2.sh http://www.ime.usp.br/~cassio/boca/download.php?filename=installv2.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2 - Atribua permissão de execução para &amp;ldquo;installv2.sh&amp;rdquo;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# chmod +x installv2.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3 - Execute o script:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# sh installv2.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Durante a instalação, o script te perguntará se deseja tornar esse sistema um servidor, se deseja definir uma senha, se deseja que ele crie um banco de dados padrão do BOCA. Para todas essas perguntas, a resposta é &amp;ldquo;Y&amp;rdquo;. Redefina a nova senha como: &amp;ldquo;boca&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Para qualquer outra senha pedida, defina como &amp;ldquo;boca&amp;rdquo;, para facilitar.&lt;/p&gt;
+
+&lt;p&gt;4 - Navegue até o diretório &amp;ldquo;/etc/apache2/conf.d/&amp;rdquo; e modifique o arquivo &amp;ldquo;boca&amp;rdquo;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# cd /etc/apache2/conf.d/
+# vim boca
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Modifique as linhas do arquivo para que fiquem como a seguir:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; &amp;lt;Directory /var/www/boca&amp;gt;
+	AllowOverride Options AuthConfig Limit
+	Order Allow,Deny
+	Allow from all
+	AddDefaultCharset utf-8
+&amp;lt;/Directory&amp;gt;
+&amp;lt;Directory /var/www/boca/private&amp;gt;
+	AllowOverride None
+	Deny from all
+&amp;lt;/Directory&amp;gt;
+&amp;lt;Directory /var/www/boca/doc&amp;gt;
+	AllowOverride None
+	Deny from all
+&amp;lt;/Directory&amp;gt;
+&amp;lt;Directory /var/www/boca/tools&amp;gt;
+	AllowOverride None
+	Deny from all
+&amp;lt;/Directory&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Caso existam mais linhas que estas no arquivo, pode deixar elas aí. Caso não existam algumas dessas linhas, adicione-as.&lt;/p&gt;
+
+&lt;p&gt;5 - Agora navegue até &amp;ldquo;cd /etc/postgresql/*/main&amp;rdquo; e abra o arquivo &amp;ldquo;postgresql.conf&amp;rdquo;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# cd /etc/postgresql/*/main
+# vim postgresql.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;No final do arquivo, copie e cole:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# THE FOLLOWING MAY BE GOOD FOR PERFORMANCE
+max_connections = 100
+maintenance_work_mem = 32MB
+shared_buffers = 512MB      ## USE AROUND 1/3 OF YOUR RAM
+work_mem = 10MB
+effective_cache_size = 512MB     ## USE AROUND 1/3 OF YOUR RAM
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;6 - Ainda no diretório &amp;ldquo;/etc/postgresql/*/main&amp;rdquo;, modifique agora o arquivo &amp;ldquo;pg_hba.conf&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Onde contém:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#Put your actual configuration here
+#——————————————–
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Deixe:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#Put your actual configuration here
+#——————————————–
+host    all   all 127.0.0.1 255.255.255.255 md5
+host    all   all 0.0.0.0     0.0.0.0       md5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;7 - Digite &amp;ldquo;cat /etc/sysctl.d/10-shmmax.conf&amp;rdquo; e verifique se os valores que aparecem são esses:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;kernel.shmmax = 805416960
+kernel.shmall = 196635
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;8 - Agora precisamos definir a senha do nosso usuário postgres que irá acessar o banco de dados.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# sudo passwd postgres
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Defina &amp;ldquo;boca&amp;rdquo; como senha.&lt;/p&gt;
+
+&lt;p&gt;9 - Logue no sistema como &amp;ldquo;postgres&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# su postgres
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;10 - Logado como &amp;ldquo;postgres&amp;rdquo;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;postgres# psql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Isso fará com que você entre dentro da CLI do postgresql.&lt;/p&gt;
+
+&lt;p&gt;Agora:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;postgres# ALTER USER postgres WITH PASSWORD &amp;quot;boca&amp;quot; –d template1
+postgres# ALTER USER postgres WITH PASSWORD &amp;quot;boca&amp;quot; –d bocadb
+postgres# \quit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;11 - Reinicie os serviços:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# /etc/init.d/apache2 restart
+# /etc/init.d/postgresql restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A partir de agora, o BOCA deverá estar acessível no IP do servidor. Se instalei no servidor de IP &amp;ldquo;200.137.66.43&amp;rdquo;, digite: &amp;ldquo;&lt;a href=&#34;http://200.137.66.43/boca&amp;quot;&#34;&gt;http://200.137.66.43/boca&amp;quot;&lt;/a&gt; no navegador e teste.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;12 - [Só se o banco de dados não foi criado no ato da instalação&amp;hellip;]&lt;/p&gt;
+
+&lt;p&gt;Navegue até &amp;ldquo;/var/www/boca/src&amp;rdquo; e digite:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# php private/createdb.php
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Reinicie os serviços:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# /etc/init.d/apache2 restart
+# /etc/init.d/postgresql restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;13 - Autojudge&lt;/p&gt;
+
+&lt;p&gt;Para ativar o autojudge, digite:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# cd /var/www/boca/tools
+# ./autojudge.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Caso algo como &amp;ldquo;Nothing to do. Sleeping&amp;hellip;&amp;rdquo; apareça no fim da execução, tudo está executando bem.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

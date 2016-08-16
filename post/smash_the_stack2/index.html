@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.16" />
+
+  <title>[IO Smash The Stack] Level02 &middot; Leonardo Ferreira</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://ferreirasc.github.io/img/favicon.ico" type="image/x-icon" />
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://ferreirasc.github.io/">Léo Ferreira</a>
+  <ul>  
+	<div id="avatar">
+  </ul>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/topics/"><i class='fa fa-folder fa-fw'></i>Topics</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/*" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/ferreirasc" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>[IO Smash The Stack] Level02</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>15 Aug 2016, 21:16</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://ferreirasc.github.io/topics/wargames">Wargames</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/wargame">Wargame</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/smashthestack-i/o">SmashTheStack I/O</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/hacking">Hacking</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>Com o level01 concluido, obtemos acesso ao shell que nos provê permissões para visualizar a senha do level02.</p>
+
+<p>Conectando ao servidor ssh do level2, observamos 4 arquivos associados a esse level: dois binários SUID de 32-bits, level02 e level02_alt, e seus códigos C correspondentes, level02.c e level02_alt.c. Nesse post estarei focando no level02.c e seu binário level02, que é uma das duas formas de concluir esse nível.</p>
+
+<p>Para começar, vamos analisar o código level02.c:</p>
+
+<pre><code> //a little fun brought to you by bla 
+
+ #include &lt;stdio.h&gt; 
+
+ #include &lt;stdlib.h&gt; 
+
+ #include &lt;signal.h&gt; 
+
+ #include &lt;setjmp.h&gt; 
+
+ void catcher(int a) 
+
+ { 
+
+     setresuid(geteuid(),geteuid(),geteuid()); 
+
+     printf(&quot;WIN!\n&quot;); 
+
+     system(&quot;/bin/sh&quot;); 
+
+     exit(0); 
+
+ } 
+
+ int main(int argc, char **argv) 
+
+ { 
+
+     puts(&quot;source code is available in level02.c\n&quot;); 
+
+     if (argc != 3 || !atoi(argv[2])) 
+
+         return 1; 
+
+     signal(SIGFPE, catcher); 
+
+     return abs(atoi(argv[1])) / atoi(argv[2]); 
+
+ } 
+</code></pre>
+
+<p>Uma simples análise do código acima nos mostra que o objetivo desse nível é fazer com que de alguma forma a função &ldquo;catcher&rdquo; seja chamada. Como se trata de um binário SUID que possui permissões de level03 (visualize isso com ls -la) a linha:</p>
+
+<pre><code>setresuid(geteuid(),geteuid(),geteuid())
+</code></pre>
+
+<p>Faria com que o EUID fosse setado para o EUID do dono do binário, que possui permissões de level03. Vemos que na linha seguinte é feito a chamada de um shell (com permissões de level03) que nos daria acesso a senha do próximo nível. Mas como essa função pode ser chamada?</p>
+
+<p>A única forma possível da função &ldquo;catcher&rdquo; ser chamada parece ser como handling na chamada da função signal() com o argumento SIGFPE. Um SIGFPE é um dos diversos Program Error Signals gerados pelo sistema operacional quando algum erro fatal é encontrado num programa, assim como o SIGILL, SIGSEGV, SIGABRT, SIGIOT, and so on. O SIGFPE, em específico, é um sinal gerado quando temos um fatal arithmetic error (como divisão por zero) ou também um overflow. Mais informações: Program Error Signals - The GNU C Library.</p>
+
+<p>A função signal(), contida na biblioteca signal.h, nos permite &ldquo;tratar&rdquo; um determinado sinal ocorrido no programa, com uma função handling qualquer passada como argumento. Essa função será a resposta comportamental do programa à um determinado sinal gerado, que no caso do código do desafio, a função signal(SIGFPE, catcher) nos diz que assim que um SIGFPE for gerado, a função catcher será chamada. Ou seja&hellip; precisamos gerar um SIGFPE!</p>
+
+<p>O código é pequeno, de forma que não é díficil observar que a única linha de código que poderia nos gerar um sinal desse tipo é</p>
+
+<pre><code>return abs(atoi(argv[1])) / atoi(argv[2]); 
+</code></pre>
+
+<p>que simplesmente divide as conversões em inteiro, com atoi(), da string do primeiro argumento da linha de comando com a string do segundo argumento. É feito o retorno do módulo dessa divisão. Podemos imaginar de cara que uma entrada como &ldquo;./level02 1 0&rdquo; nos daria um SIGFPE por essa linha&hellip; de fato daria, exceto pela condição imposta no programa de que o inteiro associado ao segundo argumento por atoi() NÃO pode ser nulo:</p>
+
+<pre><code>if (argc != 3 || !atoi(argv[2])) 
+
+         return 1;
+</code></pre>
+
+<p>Além da condição de exatamente três argumentos na linha de comando (contando com a execução do binário), é claro. Caso alguma dessas condições não seja satisfeita, o programa finalizará sem nenhuma chance de conseguirmos acesso a função catcher. Infelizmente, podemos descartar a divisão por zero.</p>
+
+<p>A saída então seria gerarmos um overflow. Para isso, precisamos lembrar que no C-ANSI o tipo int é representado por 4 bytes, ou seja, 32-bits (isso pode ser visto com sizeof(int)). Portanto, temos 232 possíveis valores, que numa representação com sinal seriam:</p>
+
+<p><img src="http://www.sciweavers.org/upload/Tex2Img_1471307845/render.png" alt="equation" /></p>
+
+<p>Já que o bit mais significativo é reservado para representação do sinal do inteiro.</p>
+
+<p>Isso nos dá um intervalo de -2147483648 a 2147483647, que são valores condizentes com as constantes INT_MIN e INT_MAX definidos pelo C e contidos na biblioteca limits.h. Obviamente, o limite mínimo é superior em módulo ao limite máximo por uma unidade, por conta da representação do zero.</p>
+
+<p>Um exemplo de um overflow seria uma representação fora desse intervalo de valores possíveis, como por exemplo 2147483648. Esse valor não existe e extrapola o limite máximo de um inteiro no C-Ansi. De fato, esse valor pode ser obtido se entrarmos com &ldquo;./level02 -2147483648 -1&rdquo;, que diferente da divisão por zero, não invalida a condição de execução do programa. A divisão desses dois valores na penúltima linha faria um overflow do tipo inteiro e geraria um SIGFPE pelo sistema operacional que seria suficiente para acionar a função signal(), que tem como handling a nossa almejada &ldquo;catcher&rdquo;. Entrando com esses dois argumentos:</p>
+
+
+<img class="pure-img" src="../images/smash02_tela1.png" alt="">
+
+
+<p>Um shell é aberto e agora temos permissão para visualizar a senha do level03!</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://ferreirasc.github.io/post/smash_the_stack1/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://ferreirasc.github.io/post/smash_the_stack1/">[IO Smash The Stack] Level01</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://ferreirasc.github.io/post/smash_the_stack3/">[IO Smash The Stack] Level03</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://ferreirasc.github.io/post/smash_the_stack3/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Your Disqus shortname';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://ferreirasc.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking ID', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

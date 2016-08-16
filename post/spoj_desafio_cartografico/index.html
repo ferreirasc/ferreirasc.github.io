@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.16" />
 
-  <title>Sobre Mim &middot; Leonardo Ferreira</title>
+  <title>[BR-SPOJ] 11011 - Desafio Cartográfico &middot; Leonardo Ferreira</title>
 
   
   
@@ -200,44 +200,124 @@
 
 
 <div class="header">
-  <h1>Sobre Mim</h1>
+  <h1>[BR-SPOJ] 11011 - Desafio Cartográfico</h1>
   <h2></h2>
 </div>
 <div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>15 Aug 2016, 22:06</time>
+  </div>
+
   
 
-<p>Graduando em Engenharia de Computação na Universidade Federal do Espírito Santo (UFES - Vitória/ES), professor do projeto <a href="www.introcomp.ufes.br"/>Introcomp</a> e apaixonado por computação.</p>
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://ferreirasc.github.io/topics/competitive-programming">Competitive Programming</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-topic" href="https://ferreirasc.github.io/topics/grafos">Grafos</a>
+    
+  </div>
+  
+  
 
-<p>Por entender a importância do compartilhamento de informações e trocas de experiências para uma sociedade mais colaborativa, criei esta página.</p>
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/spojbr">SPOJBR</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/programming">Programming</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/grafos">Grafos</a>
+    
+  </div>
+  
+  
 
-<hr />
+</div>
 
-<h3 id="experiência-profissional">Experiência Profissional</h3>
+  
+
+<p>Dado um grafo G não-direcionado, não-valorado, conexo e acíclico, determinar a distância entre os pares de vértices mais distantes em G.</p>
 
 <ul>
-<li><p>Bolsista no <strong>Programa de Educação Tutorial (PET)</strong> do curso de Engenharia de Computação da UFES, Vitória, ES - [2012-2015]</p></li>
-
-<li><p>Professor do projeto <strong>Introcomp - Introdução à Computação</strong>, Vitória, ES - [2012-Atualmente]</p></li>
-
-<li><p><strong>Monitor da disciplina de Programação 2</strong> da UFES, Vitória, ES - [2013.2-2014.2]</p></li>
-
-<li><p>Bolsista de Iniciação Científica no <strong>Núcleo de Estudos em Redes Definidas por Software (NERDS)</strong> - [2015.2-Atualmente]</p></li>
+<li>Problema: <a href="http://br.spoj.com/problems/CARTOG11/">http://br.spoj.com/problems/CARTOG11/</a><br></li>
+<li>Assunto Envolvido: Grafos<br></li>
+<li>Linguagem Utilizada: C++<br></li>
+<li>Tempo de Execução: 8.39<br></li>
+<li>Uso de Memória: 36M<br></li>
+<li>Nível: <sup>6</sup>&frasl;<sub>10</sub><br></li>
 </ul>
 
-<hr />
+<h3 id="dicas-para-resolução">Dicas para Resolução</h3>
 
-<h3 id="interesses">Interesses</h3>
+<p>A primeira vista cometi o erro de entender que a resolução desse problema se dava com um simples BFS, partindo de <strong>qualquer</strong> vértice, contando os passos no enfileiramento de vértices. Dessa forma, ao final do BFS, teria a maior distância &ldquo;andada&rdquo; pelo BFS. Veja pela imagem como é incorreto pensar dessa forma:</p>
 
-<ul>
-<li>Segurança da Informação</li>
-<li>Programação</li>
-<li>Redes / Infra / Sysadmin</li>
-<li>Software Livre</li>
-</ul>
 
-<h3 id="curriculum-vitae">Curriculum Vitae</h3>
+<img class="pure-img" src="../images/img1.png" alt="">
 
-<p>Link: <a href="https://www.dropbox.com/s/zpiwhr35yjvpkh1/Leonardo%20-%20Curr%C3%ADculo%20%5Bf1%5D.pdf?dl=0"/>CV</a></p>
+
+<p>No grafo acima, executando a busca em largura partindo do vértice 1, teríamos como maior distância &ldquo;3&rdquo; (Distância do nível 1 ao nível 4, considerando que cada aresta pesa uma unidade). Acontece que a maior distância nesse caso é &ldquo;5&rdquo; (Partindo do vértice 13 e percorrendo até o vértice 9).</p>
+
+<p>Resolvi esse problema utilizando dois BFS. O primeiro você deve imaginar que me retornará o índice de uma folha no último nível do grafo. O segundo, sim, de fato, me retornará a maior distância entre vértices de G (rodando o BFS partindo dessa folha!).</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://ferreirasc.github.io/post/smash_the_stack3/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://ferreirasc.github.io/post/smash_the_stack3/">[IO Smash The Stack] Level03</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Your Disqus shortname';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 
 </div>
 

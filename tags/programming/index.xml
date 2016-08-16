@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Leonardo Ferreira</title>
+    <link>https://ferreirasc.github.io/tags/programming/</link>
+    <description>Recent content in Programming on Leonardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 15 Aug 2016 22:06:03 +0000</lastBuildDate>
+    <atom:link href="https://ferreirasc.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[BR-SPOJ] 11011 - Desafio Cartográfico</title>
+      <link>https://ferreirasc.github.io/post/spoj_desafio_cartografico/</link>
+      <pubDate>Mon, 15 Aug 2016 22:06:03 +0000</pubDate>
+      
+      <guid>https://ferreirasc.github.io/post/spoj_desafio_cartografico/</guid>
+      <description>
+
+&lt;p&gt;Dado um grafo G não-direcionado, não-valorado, conexo e acíclico, determinar a distância entre os pares de vértices mais distantes em G.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problema: &lt;a href=&#34;http://br.spoj.com/problems/CARTOG11/&#34;&gt;http://br.spoj.com/problems/CARTOG11/&lt;/a&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Assunto Envolvido: Grafos&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Linguagem Utilizada: C++&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Tempo de Execução: 8.39&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Uso de Memória: 36M&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Nível: &lt;sup&gt;6&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;dicas-para-resolução&#34;&gt;Dicas para Resolução&lt;/h3&gt;
+
+&lt;p&gt;A primeira vista cometi o erro de entender que a resolução desse problema se dava com um simples BFS, partindo de &lt;strong&gt;qualquer&lt;/strong&gt; vértice, contando os passos no enfileiramento de vértices. Dessa forma, ao final do BFS, teria a maior distância &amp;ldquo;andada&amp;rdquo; pelo BFS. Veja pela imagem como é incorreto pensar dessa forma:&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/img1.png&#34; alt=&#34;&#34;&gt;
+
+
+&lt;p&gt;No grafo acima, executando a busca em largura partindo do vértice 1, teríamos como maior distância &amp;ldquo;3&amp;rdquo; (Distância do nível 1 ao nível 4, considerando que cada aresta pesa uma unidade). Acontece que a maior distância nesse caso é &amp;ldquo;5&amp;rdquo; (Partindo do vértice 13 e percorrendo até o vértice 9).&lt;/p&gt;
+
+&lt;p&gt;Resolvi esse problema utilizando dois BFS. O primeiro você deve imaginar que me retornará o índice de uma folha no último nível do grafo. O segundo, sim, de fato, me retornará a maior distância entre vértices de G (rodando o BFS partindo dessa folha!).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>O problema da satisfatibilidade booleana (SAT)</title>
+      <link>https://ferreirasc.github.io/post/spoj_cardapio/</link>
+      <pubDate>Tue, 15 Mar 2016 21:10:03 +0000</pubDate>
+      
+      <guid>https://ferreirasc.github.io/post/spoj_cardapio/</guid>
+      <description>
+
+&lt;p&gt;Na teoria da complexidade computacional, o &lt;strong&gt;problema da satisfatibilidade booleana (SAT)&lt;/strong&gt; é reconhecidamente um dos primeiros NP-completo. O problema visa encontrar uma solução verdade para uma dada fórmula booleana, e caso encontrada, a fórmula é considerada &amp;ldquo;satisfatível&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Por exemplo, se x1, x2, x3 e x4 são variáveis booleanas de uma fórmula booleana qualquer como:&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/boolean_equation.png&#34; alt=&#34;&#34;&gt;
+
+
+&lt;p&gt;Caso seja possível encontrar valores para as quatro variáveis que torne a dada fórmula verdadeira, o problema SAT é resolvido.&lt;/p&gt;
+
+&lt;p&gt;Um problema do tipo SAT se torna mais simples quando é restringido a uma forma normal disjuntiva, onde todas as fórmulas lógicas são representadas por conjunções de cláusulas disjuntivas. Se torna mais simples ainda se o número de literais em cada cláusula for limitado por 2, passando a ser denominado 2-SAT problem (que pode ser resolvido em tempo polinomial).&lt;/p&gt;
+
+&lt;h3 id=&#34;2-sat-problem&#34;&gt;2-SAT Problem&lt;/h3&gt;
+
+&lt;p&gt;Um problema 2-SAT é representado por uma sentença lógica, composta de duas literais em cada cláusula, na forma normal disjuntiva como:&lt;/p&gt;
+
+&lt;p&gt;(a v b) ^ (~ c v d) ^ (e v f) ^ &amp;hellip;  onde a, b, c, d, &amp;hellip; , são variáveis quaisquer que se pode atribuir valores verdade. Caso a sentença seja verdadeira para os valores atribuidos, o problema é satisfeito.&lt;/p&gt;
+
+&lt;p&gt;A primeira observação que temos é que (a v b) tem como equivalente a sentença (~a -&amp;gt; b v ~b -&amp;gt; a).&lt;/p&gt;
+
+&lt;p&gt;Se substituirmos todas as cláusulas disjuntivas pela sua equivalente do tipo &amp;ldquo;a implica b&amp;rdquo;, o problema 2-SAT pode ser modelado na forma de um grafo direcionado em que os vértices do grafo representam todas as literais e suas negações da sentença lógica (vértice ¬x sendo diferente de x) e as arestas representam as implicações das literais.&lt;/p&gt;
+
+&lt;p&gt;Exemplo (via wikipedia):&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/boolean_equation2.png&#34; alt=&#34;&#34;&gt;
+
+
+&lt;p&gt;É modelado por:&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/boolean_equation3.png&#34; alt=&#34;&#34;&gt;
+
+
+&lt;p&gt;Sabendo que se qualquer condição encontrada do tipo &amp;ldquo;~a -&amp;gt; a&amp;rdquo; ou &amp;ldquo;a -&amp;gt; ~a&amp;rdquo; (ou seja, se existir caminho no grafo entre &amp;ldquo;a&amp;rdquo; e &amp;ldquo;~a&amp;rdquo;) nos daria uma sentença insatisfatível (&lt;a href=&#34;http://www.cs.tau.ac.il/~safra/Complexity/2SAT.ppt&#34;/&gt;Prova&lt;/a&gt;) para &lt;strong&gt;qualquer&lt;/strong&gt; valor atribuido às variáveis lógicas, o problema se resume a encontrar uma componente fortemente conexa, com Tarjan ou Kosaraju, e verificar se nessa componente conexa encontrada NÃO TEMOS as variáveis &amp;ldquo;a&amp;rdquo; e sua negação &amp;ldquo;~a&amp;rdquo;. Caso contrário, teríamos caminho entre uma  literal e sua negação, invalidando a satisfatibilidade da sentença como explicado na prova contida no link acima.&lt;/p&gt;
+
+&lt;p&gt;Podemos descrever o algoritmo de resolução como:&lt;/p&gt;
+
+&lt;p&gt;1 - Modelar o grafo direcionado da sentença lógica;&lt;/p&gt;
+
+&lt;p&gt;2 - Encontrar componentes fortemente conexas;&lt;/p&gt;
+
+&lt;p&gt;3 - Verificar se alguma componente não contem uma literal e sua negação (dessa forma, não existindo caminho entre elas).&lt;/p&gt;
+
+&lt;h3 id=&#34;o-cardápio-da-sra-montagny&#34;&gt;O cardápio da Sra. Montagny&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problema: &lt;a href=&#34;http://br.spoj.com/problems/CARDAPIO/&#34;&gt;http://br.spoj.com/problems/CARDAPIO/&lt;/a&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Assunto Envolvido: Grafos, 2-SAT&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Linguagem Utilizada: C++&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Tempo de Execução: 0.61&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Uso de memória: 3.0M&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Nível: &lt;sup&gt;7&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;resumo-do-problema&#34;&gt;Resumo do Problema&lt;/h4&gt;
+
+&lt;p&gt;Sra Montagny quer realizar uma festa e verificar se é possível montar um cardápio que satisfaça ao menos um desejo de cada convidado da festa.&lt;/p&gt;
+
+&lt;p&gt;Cada convidado irá fazer 2 pedidos, contendo sua preferência de comida na festa, podendo ser uma das três hipóteses:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Duas comidas que ele gostaria de ver no cardápio;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Uma comida que gostaria e uma que não gostaria de ver no cardápio;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Duas que não gostaria de ver no cardápio.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;dicas-para-resolução&#34;&gt;Dicas para Resolução&lt;/h4&gt;
+
+&lt;p&gt;Perceba que os pedidos dos convidados podem ser representados por uma sentença lógica na forma normal-disjuntiva em que cada cláusula disjuntiva represente os dois pedidos de cada convidado, de forma que precisamos verificar se existe alguma comida que se encaixe nessa sentença e possa torná-la satisfatível (caracterizando um 2-Sat Problem).&lt;/p&gt;
+
+&lt;p&gt;O problema se resume então em modelar o 2-Sat na forma de um grafo direcionado e verificar se alguma componente fortemente conexa desse grafo não contém qualquer literal e sua negação. Caso essa condição seja satisfeita, imprima &amp;ldquo;sim&amp;rdquo;. Caso contrário, imprima &amp;ldquo;não&amp;rdquo;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
