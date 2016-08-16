@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devc&#43;&#43; on Leonardo Ferreira</title>
+    <link>https://ferreirasc.github.io/tags/devc&#43;&#43;/</link>
+    <description>Recent content in Devc&#43;&#43; on Leonardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 15 Jul 2016 17:42:03 +0000</lastBuildDate>
+    <atom:link href="https://ferreirasc.github.io/tags/devc&#43;&#43;/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[Introcomp] Programando C em Windows e Linux</title>
+      <link>https://ferreirasc.github.io/post/introcomp_tutorial01/</link>
+      <pubDate>Fri, 15 Jul 2016 17:42:03 +0000</pubDate>
+      
+      <guid>https://ferreirasc.github.io/post/introcomp_tutorial01/</guid>
+      <description>
+
+&lt;p&gt;Uma breve explicação de como preparar seu ambiente, seja Windows ou Linux, para programar utilizando C. Direcionado aos alunos do Introcomp.&lt;/p&gt;
+
+&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+
+&lt;p&gt;** Antes de mais nada: O Introcomp recomenda que os alunos adotem alguma distribuição Linux para acompanhamento do curso, já que essa será a plataforma utilizada nos exemplos dados em todas aulas, seja em laboratório ou sala de aula.&lt;/p&gt;
+
+&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
+
+&lt;p&gt;O Introcomp indica dois ambientes de desenvolvimento (ou &amp;ldquo;IDE&amp;rdquo;) para programar em C nas plataformas Windows: O &lt;em&gt;CodeBlocks&lt;/em&gt; e o &lt;em&gt;DevC++&lt;/em&gt;. Como o CodeBlocks já foi explicado em sala de aula, tendo slides dedicados na &amp;ldquo;Aula 02&amp;rdquo;, estarei focando este tutorial no setup do DevC++, que na minha opinião é a IDE mais simples para desenvolvimento em C no Windows.&lt;/p&gt;
+
+&lt;h4 id=&#34;devc-passo-a-passo&#34;&gt;DevC++ - Passo a Passo&lt;/h4&gt;
+
+&lt;p&gt;1 - Faça download do DevC++ no link: &lt;a href=&#34;https://sourceforge.net/projects/orwelldevcpp/&#34;&gt;https://sourceforge.net/projects/orwelldevcpp/&lt;/a&gt;. Clicando no link verde escrito download, ele deve se iniciar automaticamente em 5 segundos.&lt;br&gt;&lt;br&gt;
+2 - Feito o download, instale o DevC++. A menos que você deseje uma configuração personalizada da IDE, pode dar &amp;ldquo;Next&amp;rdquo; em todos os passos da instalação até concluir. &lt;br&gt;&lt;br&gt;
+3 - Feito a instalação, você deverá encontrar uma tela como essa:&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/devc&amp;#43;&amp;#43;1.jpg&#34; alt=&#34;&#34;&gt;
+
+
+&lt;p&gt;Abra um novo arquivo fonte para começar o desenvolvimento:&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/devc&amp;#43;&amp;#43;2.jpg&#34; alt=&#34;&#34;&gt;
+
+
+&lt;p&gt;4 - Salve seu arquivo fonte para que ele possa ser reconhecido como um código em C. Para fazer isso, aperte CTRL+S ou navegue até o menu superior &lt;strong&gt;Arquivo-&amp;gt;Salvar Como&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/devc&amp;#43;&amp;#43;3.jpg&#34; alt=&#34;&#34;&gt;
+
+
+&lt;p&gt;A seguinte janela deverá aparecer:&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/devc&amp;#43;&amp;#43;4.jpg&#34; alt=&#34;&#34;&gt;
+
+
+&lt;p&gt;Conforme a imagem acima, em &lt;strong&gt;Save as type&lt;/strong&gt; você deverá selecionar &amp;ldquo;C Source Files (*.c)&amp;rdquo; e em &lt;strong&gt;File name&lt;/strong&gt; deverá entrar com o nome do seu código, que no meu caso foi &amp;ldquo;meu_codigo&amp;rdquo;. Isso fará com que na pasta Desktop, como indicado, seja criado um arquivo chamado &amp;ldquo;meu_codigo.c&amp;rdquo;. Clique no botão Save para finalizar.&lt;/p&gt;
+
+&lt;p&gt;5 - Tudo pronto pra desenvolver seu código:&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/devc&amp;#43;&amp;#43;5.jpg&#34; alt=&#34;&#34;&gt;
+
+
+&lt;p&gt;6 - Para compilar e executar, aperte &lt;strong&gt;F11&lt;/strong&gt;. Ou então, vá até o menu superior na aba Executar e selecione a opção &lt;em&gt;Compilar &amp;amp; Executar&lt;/em&gt;. Nesse momento, um arquivo com extensão &amp;ldquo;.exe&amp;rdquo; de mesmo nome e na mesma pasta que seu código &amp;ldquo;.c&amp;rdquo; será criado. No caso deste exemplo, na pasta Desktop. Uma janela também será vista, com seu código já sendo executado:&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/devc&amp;#43;&amp;#43;6.jpg&#34; alt=&#34;&#34;&gt;
+
+
+&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+
+&lt;p&gt;Para aqueles que desejam programar em C na plataforma Linux, as coisas são ainda mais fáceis. Isso por que a maioria das distribuições Linux já carregam nativamente um compilador da linguagem C: o GCC. :-)&lt;/p&gt;
+
+&lt;p&gt;Portanto, para começar a desenvolver, você deverá primeiramente abrir um editor de texto de sua escolha (usarei o &lt;strong&gt;gedit&lt;/strong&gt;) e salvar este arquivo com extensão &amp;ldquo;.c&amp;rdquo;, para que ele se torne um código na linguagem C. Neste exemplo, salvei meu arquivo como &lt;em&gt;teste.c&lt;/em&gt; no diretório &amp;ldquo;/home/ferreirasc&amp;rdquo;.&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/linux_01.png&#34; alt=&#34;&#34;&gt;
+
+
+&lt;p&gt;Abra o terminal de sua distribuição Linux (caso seja Ubuntu, &lt;strong&gt;Ctrl+ALT+T&lt;/strong&gt; deverá ser um atalho pra isso) e navegue até a pasta onde foi salvo seu arquivo &amp;ldquo;.c&amp;rdquo;. No caso deste exemplo, o arquivo &lt;em&gt;teste.c&lt;/em&gt; está localizado em &amp;ldquo;/home/ferreirasc&amp;rdquo;, então:&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/linux_02.png&#34; alt=&#34;&#34;&gt;
+
+
+&lt;p&gt;Na figura acima, o terminal inicialmente apontava para o diretório &amp;ldquo;/home&amp;rdquo;, conforme mostrado pelo comando &amp;ldquo;pwd&amp;rdquo; (que me diz para qual diretório meu terminal está apontando no momento). Assim, é preciso navegar até onde o arquivo &lt;em&gt;teste.c&lt;/em&gt; está localizado, ou seja, no &amp;ldquo;/home/ferreirasc&amp;rdquo;, com o comando &amp;ldquo;cd&amp;rdquo;. Isso pode ser visualizado com o comando &amp;ldquo;pwd&amp;rdquo; após o &amp;ldquo;cd&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Ao listar os arquivos do diretório, com &amp;ldquo;ls&amp;rdquo;, o arquivo &lt;em&gt;teste.c&lt;/em&gt; estará lá.&lt;/p&gt;
+
+&lt;p&gt;Para compilar e executar o arquivo &lt;em&gt;teste.c&lt;/em&gt;, conforme visto em sala de aula:&lt;/p&gt;
+
+
+&lt;img class=&#34;pure-img&#34; src=&#34;../images/linux_03.png&#34; alt=&#34;&#34;&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>
