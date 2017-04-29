@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Topics on Leonardo Ferreira</title>
+    <link>https://ferreirasc.github.io/topics/</link>
+    <description>Recent content in Topics on Leonardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 15 Aug 2016 22:06:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://ferreirasc.github.io/topics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Competitive Programming</title>
+      <link>https://ferreirasc.github.io/topics/competitive-programming/</link>
+      <pubDate>Mon, 15 Aug 2016 22:06:03 +0000</pubDate>
+      
+      <guid>https://ferreirasc.github.io/topics/competitive-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grafos</title>
+      <link>https://ferreirasc.github.io/topics/grafos/</link>
+      <pubDate>Mon, 15 Aug 2016 22:06:03 +0000</pubDate>
+      
+      <guid>https://ferreirasc.github.io/topics/grafos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introcomp</title>
+      <link>https://ferreirasc.github.io/topics/introcomp/</link>
+      <pubDate>Fri, 15 Jul 2016 17:42:03 +0000</pubDate>
+      
+      <guid>https://ferreirasc.github.io/topics/introcomp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutoriais</title>
+      <link>https://ferreirasc.github.io/topics/tutoriais/</link>
+      <pubDate>Mon, 15 Aug 2016 17:42:03 +0000</pubDate>
+      
+      <guid>https://ferreirasc.github.io/topics/tutoriais/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wargames</title>
+      <link>https://ferreirasc.github.io/topics/wargames/</link>
+      <pubDate>Mon, 15 Aug 2016 21:27:03 +0000</pubDate>
+      
+      <guid>https://ferreirasc.github.io/topics/wargames/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.16" />
+  <meta name="generator" content="Hugo 0.21-DEV" />
 
   <title>[BR-SPOJ] 11011 - Desafio Cartográfico &middot; Leonardo Ferreira</title>
 
@@ -144,6 +144,10 @@
     
 
     
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/leonardo-meneses" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
 
     
 
@@ -242,12 +246,10 @@
 
 </div>
 
-  
-
-<p>Dado um grafo G não-direcionado, não-valorado, conexo e acíclico, determinar a distância entre os pares de vértices mais distantes em G.</p>
+  <p>Dado um grafo G não-direcionado, não-valorado, conexo e acíclico, determinar a distância entre os pares de vértices mais distantes em G.</p>
 
 <ul>
-<li>Problema: <a href="http://br.spoj.com/problems/CARTOG11/">http://br.spoj.com/problems/CARTOG11/</a><br></li>
+<li>Problema: <a href="http://br.spoj.com/problems/CARTOG11/">http://br.spoj.com/problems/CARTOG11/HUGOMORE42</a><br></li>
 <li>Assunto Envolvido: Grafos<br></li>
 <li>Linguagem Utilizada: C++<br></li>
 <li>Tempo de Execução: 8.39<br></li>
@@ -266,7 +268,6 @@
 <p>No grafo acima, executando a busca em largura partindo do vértice 1, teríamos como maior distância &ldquo;3&rdquo; (Distância do nível 1 ao nível 4, considerando que cada aresta pesa uma unidade). Acontece que a maior distância nesse caso é &ldquo;5&rdquo; (Partindo do vértice 13 e percorrendo até o vértice 9).</p>
 
 <p>Resolvi esse problema utilizando dois BFS. O primeiro você deve imaginar que me retornará o índice de uma folha no último nível do grafo. O segundo, sim, de fato, me retornará a maior distância entre vértices de G (rodando o BFS partindo dessa folha!).</p>
-
 
   
 <div class="prev-next-post pure-g">

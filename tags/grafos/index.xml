@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Mon, 15 Aug 2016 22:06:03 +0000</lastBuildDate>
-    <atom:link href="https://ferreirasc.github.io/tags/grafos/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://ferreirasc.github.io/tags/grafos/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>[BR-SPOJ] 11011 - Desafio Cartográfico</title>
@@ -15,31 +17,7 @@
       <pubDate>Mon, 15 Aug 2016 22:06:03 +0000</pubDate>
       
       <guid>https://ferreirasc.github.io/post/spoj_desafio_cartografico/</guid>
-      <description>
-
-&lt;p&gt;Dado um grafo G não-direcionado, não-valorado, conexo e acíclico, determinar a distância entre os pares de vértices mais distantes em G.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Problema: &lt;a href=&#34;http://br.spoj.com/problems/CARTOG11/&#34;&gt;http://br.spoj.com/problems/CARTOG11/&lt;/a&gt;&lt;br&gt;&lt;/li&gt;
-&lt;li&gt;Assunto Envolvido: Grafos&lt;br&gt;&lt;/li&gt;
-&lt;li&gt;Linguagem Utilizada: C++&lt;br&gt;&lt;/li&gt;
-&lt;li&gt;Tempo de Execução: 8.39&lt;br&gt;&lt;/li&gt;
-&lt;li&gt;Uso de Memória: 36M&lt;br&gt;&lt;/li&gt;
-&lt;li&gt;Nível: &lt;sup&gt;6&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt;&lt;br&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;dicas-para-resolução&#34;&gt;Dicas para Resolução&lt;/h3&gt;
-
-&lt;p&gt;A primeira vista cometi o erro de entender que a resolução desse problema se dava com um simples BFS, partindo de &lt;strong&gt;qualquer&lt;/strong&gt; vértice, contando os passos no enfileiramento de vértices. Dessa forma, ao final do BFS, teria a maior distância &amp;ldquo;andada&amp;rdquo; pelo BFS. Veja pela imagem como é incorreto pensar dessa forma:&lt;/p&gt;
-
-
-&lt;img class=&#34;pure-img&#34; src=&#34;../images/img1.png&#34; alt=&#34;&#34;&gt;
-
-
-&lt;p&gt;No grafo acima, executando a busca em largura partindo do vértice 1, teríamos como maior distância &amp;ldquo;3&amp;rdquo; (Distância do nível 1 ao nível 4, considerando que cada aresta pesa uma unidade). Acontece que a maior distância nesse caso é &amp;ldquo;5&amp;rdquo; (Partindo do vértice 13 e percorrendo até o vértice 9).&lt;/p&gt;
-
-&lt;p&gt;Resolvi esse problema utilizando dois BFS. O primeiro você deve imaginar que me retornará o índice de uma folha no último nível do grafo. O segundo, sim, de fato, me retornará a maior distância entre vértices de G (rodando o BFS partindo dessa folha!).&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
   </channel>
