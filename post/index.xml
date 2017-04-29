@@ -17,7 +17,7 @@
       <pubDate>Sun, 12 Mar 2017 17:42:03 +0000</pubDate>
       
       <guid>https://ferreirasc.github.io/post/kioptrix_level_1/</guid>
-      <description>&lt;p&gt;Let&amp;rsquo;s play with the Kioptrix level 1 VM. This Kioptrix VM Image are easy challenges. The object of the game is to acquire root access via any means possible (except actually hacking the VM server or player).&lt;/p&gt;
+      <description>&lt;p&gt;Let&amp;rsquo;s play with the Kioptrix level 1 VM. This Kioptrix VM Image are easy challenges and the object of the game is to acquire root access via any means possible (except actually hacking the VM server or player).&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -28,7 +28,13 @@
       <pubDate>Mon, 15 Aug 2016 22:06:03 +0000</pubDate>
       
       <guid>https://ferreirasc.github.io/post/spoj_desafio_cartografico/</guid>
-      <description></description>
+      <description>&lt;p&gt;Dado um grafo G não-direcionado, não-valorado, conexo e acíclico, determinar a distância entre os pares de vértices mais distantes em G.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problema: &lt;a href=&#34;http://br.spoj.com/problems/CARTOG11/&#34;&gt;http://br.spoj.com/problems/CARTOG11/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

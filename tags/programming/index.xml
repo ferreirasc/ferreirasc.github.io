@@ -17,7 +17,13 @@
       <pubDate>Mon, 15 Aug 2016 22:06:03 +0000</pubDate>
       
       <guid>https://ferreirasc.github.io/post/spoj_desafio_cartografico/</guid>
-      <description></description>
+      <description>&lt;p&gt;Dado um grafo G não-direcionado, não-valorado, conexo e acíclico, determinar a distância entre os pares de vértices mais distantes em G.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problema: &lt;a href=&#34;http://br.spoj.com/problems/CARTOG11/&#34;&gt;http://br.spoj.com/problems/CARTOG11/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
