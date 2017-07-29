@@ -319,15 +319,21 @@ Nmap done: 1 IP address (1 host up) scanned in 17.47 seconds
 
 <p>Let&rsquo;s take a look on the web server running on the port 80:</p>
 
-<p>IMAGEM</p>
+
+<img class="pure-img" src="../images/Kioptrix_1_1_image1.png" alt="">
+
 
 <p>Trying a simple SQL injection trick to bypass the authentication&hellip;</p>
 
-<p>IMAGEM</p>
+
+<img class="pure-img" src="../images/Kioptrix_1_1_image2.png" alt="">
+
 
 <p>I&rsquo;m in. :-)</p>
 
-<p>IMAGEM</p>
+
+<img class="pure-img" src="../images/Kioptrix_1_1_image3.png" alt="">
+
 
 <p>Apparently, the only function of this &ldquo;Administration page&rdquo; is to ping a address on my network. If the application can ping a machine from this field, it could also execute other commands. Assuming that the input could be an argument for a system() function, for example, if I&rsquo;m lucky I could take advantage of this for execute a payload invoking a reverse shell just using a simple &ldquo;;&rdquo; to separate two commands in a shell:</p>
 
@@ -338,17 +344,23 @@ Nmap done: 1 IP address (1 host up) scanned in 17.47 seconds
 
 <p>Maybe I need to provide a complete path to netcat binary (nc binary could not be present on the machine or maybe its directory would not be listed in $PATH). Let&rsquo;s use <em>whereis</em> command to discovering your path:</p>
 
-<p>IMAGEM</p>
+
+<img class="pure-img" src="../images/Kioptrix_1_1_image4.png" alt="">
+
 
 <p>And now we can find your right path:</p>
 
-<p>IMAGEM</p>
+
+<img class="pure-img" src="../images/Kioptrix_1_1_image5.png" alt="">
+
 
 <p>I checked the &ldquo;-e&rdquo; option on netcat binary and it was present (just a <em>&ldquo;ping 192.168.3.1;/usr/local/bin/nc &ndash;help&rdquo;</em>)&hellip; which saves me a lot of work! hahah</p>
 
 <p>My reverse shell can be invoked right now:</p>
 
-<p>IMAGEM</p>
+
+<img class="pure-img" src="../images/Kioptrix_1_1_image6.png" alt="">
+
 
 <p>And here we go&hellip;</p>
 
