@@ -327,13 +327,13 @@ Nmap done: 1 IP address (1 host up) scanned in 17.47 seconds
 <img class="pure-img" src="../images/Kioptrix_1_1_image1.png" alt="">
 
 
-<p>Trying a simple SQL injection trick to bypass the authentication&hellip;</p>
+<p>It&rsquo;s just a administration login page. Let&rsquo;s try a simple SQL injection trick to bypass the authentication&hellip;</p>
 
 
 <img class="pure-img" src="../images/Kioptrix_1_1_image2.png" alt="">
 
 
-<p>I&rsquo;m in. :-)</p>
+<p>&hellip; and I&rsquo;m in. :-)</p>
 
 
 <img class="pure-img" src="../images/Kioptrix_1_1_image3.png" alt="">
@@ -379,7 +379,7 @@ bash: no job control in this shell
 bash-3.00$
 </code></pre>
 
-<p>I&rsquo;m in with the apache user context. From here, I often use this link as a reference for escalation privilege in *nix environments. Checking the <em>uname -a</em> command I figure out that the system is running with a vulnerable kernel version (2.6.9-55.EL), what led me to this exploit-db <a href="https://www.exploit-db.com/exploits/9542/"/>link</a>.</p>
+<p>I&rsquo;m in with the apache user context. From here, I often use <a href="https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/"/>this link</a> as a reference for escalation privilege in *nix environments (thx <strong>@g0tm1k</strong>). Checking the <em>uname -a</em> command I figure out that the system is running with a vulnerable kernel version (2.6.9-55.EL), what led me to this exploit-db <a href="https://www.exploit-db.com/exploits/9542/"/>link</a>.</p>
 
 <p>I downloaded the code on my local machine and started a simple web server so my VM can get the code:</p>
 
