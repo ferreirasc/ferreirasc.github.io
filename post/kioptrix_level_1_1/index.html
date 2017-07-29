@@ -246,7 +246,11 @@
 
 </div>
 
-  <p>Let&rsquo;s get started scanning my network to discover the Kioptrix 1.1 VM:</p>
+  <p>Having completed Level 1, we will now play Level 2 of the Kioptrix series. This VM can be found at <a href="http://www.kioptrix.com/"/>Kioptrix webpage</a>.</p>
+
+<p></p>
+
+<p>Let&rsquo;s get started scanning my network to discover the Kioptrix 1.1 VM:</p>
 
 <pre><code>root@kali:~# nmap -sn 192.168.3.0/24
 
@@ -375,7 +379,7 @@ bash: no job control in this shell
 bash-3.00$
 </code></pre>
 
-<p>I&rsquo;m in with the apache user context. From here, I often use this link as a reference for escalation privilege in *nix environments. Checking the <em>uname -a</em> command I figure out that the system is running with a vulnerable kernel version (2.6.9-55.EL), what led me to the link: EXPLOIT-DB.</p>
+<p>I&rsquo;m in with the apache user context. From here, I often use this link as a reference for escalation privilege in *nix environments. Checking the <em>uname -a</em> command I figure out that the system is running with a vulnerable kernel version (2.6.9-55.EL), what led me to this exploit-db <a href="https://www.exploit-db.com/exploits/9542/"/>link</a>.</p>
 
 <p>I downloaded the code on my local machine and started a simple web server so my VM can get the code:</p>
 
@@ -436,7 +440,6 @@ sh-3.00#
 </code></pre>
 
 <p>Congrats, you have <strong>root</strong>! :D</p>
-
 
   
 <div class="prev-next-post pure-g">

@@ -17,8 +17,9 @@
       <pubDate>Fri, 28 Jul 2017 15:51:03 +0000</pubDate>
       
       <guid>https://ferreirasc.github.io/post/kioptrix_level_1_1/</guid>
-      <description>Let&amp;rsquo;s get started scanning my network to discover the Kioptrix 1.1 VM:
-root@kali:~# nmap -sn 192.168.3.0/24 Starting Nmap 7.50 ( https://nmap.org ) at 2017-07-27 17:57 EDT &amp;lt;-- omitted information --&amp;gt; Nmap scan report for 192.168.3.98 Host is up (0.0035s latency). MAC Address: 00:0C:29:57:92:6D (VMware) &amp;lt;-- omitted information --&amp;gt; Nmap done: 256 IP addresses (11 hosts up) scanned in 8.61 seconds  The 192.168.3.98 address is mapped to Kioptrix 1.1 on my network.</description>
+      <description>&lt;p&gt;Having completed Level 1, we will now play Level 2 of the Kioptrix series. This VM can be found at &lt;a href=&#34;http://www.kioptrix.com/&#34;/&gt;Kioptrix webpage&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
