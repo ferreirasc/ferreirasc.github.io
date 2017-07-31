@@ -6,10 +6,23 @@
     <description>Recent content in Posts on Leonardo Ferreira</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 28 Jul 2017 15:51:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jul 2017 22:22:03 +0000</lastBuildDate>
     
 	<atom:link href="https://ferreirasc.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kioptrix Level 1.2 (Level 3)</title>
+      <link>https://ferreirasc.github.io/post/kioptrix_level_1_2/</link>
+      <pubDate>Sun, 30 Jul 2017 22:22:03 +0000</pubDate>
+      
+      <guid>https://ferreirasc.github.io/post/kioptrix_level_1_2/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s take a look at the level 3 of Kioptrix series. This level is a little more tricky than previous two. I&amp;rsquo;ll show one of two possible solutions for this challenge and just comment the second solution at the end.&lt;/p&gt;
+
+&lt;p&gt;Again, this VM can be found at &lt;a href=&#34;http://www.kioptrix.com/&#34;/&gt;Kioptrix webpage&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Kioptrix Level 1.1 (Level 2)</title>
