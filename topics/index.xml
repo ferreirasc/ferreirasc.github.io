@@ -1,86 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Topics on Davi Frossard</title>
-    <link>https://www.cs.toronto.edu/~frossard/topics/</link>
-    <description>Recent content in Topics on Davi Frossard</description>
+    <title>Topics on Leonardo Ferreira</title>
+    <link>http://127.0.0.1/topics/</link>
+    <description>Recent content in Topics on Leonardo Ferreira</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 17 Jun 2016 01:34:54 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 00:30:20 -0400</lastBuildDate>
     
-	<atom:link href="https://www.cs.toronto.edu/~frossard/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://127.0.0.1/topics/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Classification</title>
-      <link>https://www.cs.toronto.edu/~frossard/topics/classification/</link>
-      <pubDate>Fri, 17 Jun 2016 01:34:54 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/topics/classification/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>Gradient Descent</title>
-      <link>https://www.cs.toronto.edu/~frossard/topics/gradient-descent/</link>
-      <pubDate>Sat, 28 May 2016 00:30:20 -0400</pubDate>
+      <title>Notes</title>
+      <link>http://127.0.0.1/topics/notes/</link>
+      <pubDate>Thu, 28 May 2020 00:30:20 -0400</pubDate>
       
-      <guid>https://www.cs.toronto.edu/~frossard/topics/gradient-descent/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linear Regression</title>
-      <link>https://www.cs.toronto.edu/~frossard/topics/linear-regression/</link>
-      <pubDate>Wed, 01 Jun 2016 03:05:30 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/topics/linear-regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Logistic Regression</title>
-      <link>https://www.cs.toronto.edu/~frossard/topics/logistic-regression/</link>
-      <pubDate>Thu, 02 Jun 2016 23:27:17 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/topics/logistic-regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>https://www.cs.toronto.edu/~frossard/topics/machine-learning/</link>
-      <pubDate>Fri, 17 Jun 2016 01:34:54 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/topics/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Multiple Linear Regression</title>
-      <link>https://www.cs.toronto.edu/~frossard/topics/multiple-linear-regression/</link>
-      <pubDate>Sun, 29 May 2016 12:40:53 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/topics/multiple-linear-regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stochastic Gradient Descent</title>
-      <link>https://www.cs.toronto.edu/~frossard/topics/stochastic-gradient-descent/</link>
-      <pubDate>Sun, 29 May 2016 12:40:53 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/topics/stochastic-gradient-descent/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tensorflow</title>
-      <link>https://www.cs.toronto.edu/~frossard/topics/tensorflow/</link>
-      <pubDate>Fri, 17 Jun 2016 01:34:54 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/topics/tensorflow/</guid>
+      <guid>http://127.0.0.1/topics/notes/</guid>
       <description></description>
     </item>
     

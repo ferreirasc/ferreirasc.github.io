@@ -1,95 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Davi Frossard</title>
-    <link>https://www.cs.toronto.edu/~frossard/tags/</link>
-    <description>Recent content in Tags on Davi Frossard</description>
+    <title>Tags on Leonardo Ferreira</title>
+    <link>http://127.0.0.1/tags/</link>
+    <description>Recent content in Tags on Leonardo Ferreira</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 02 Jun 2016 23:27:17 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 00:30:20 -0400</lastBuildDate>
     
-	<atom:link href="https://www.cs.toronto.edu/~frossard/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://127.0.0.1/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Classification</title>
-      <link>https://www.cs.toronto.edu/~frossard/tags/classification/</link>
-      <pubDate>Thu, 02 Jun 2016 23:27:17 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/tags/classification/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>Convolutional Neural Networks</title>
-      <link>https://www.cs.toronto.edu/~frossard/tags/convolutional-neural-networks/</link>
-      <pubDate>Fri, 17 Jun 2016 01:34:54 -0400</pubDate>
+      <title>Pentest</title>
+      <link>http://127.0.0.1/tags/pentest/</link>
+      <pubDate>Thu, 28 May 2020 00:30:20 -0400</pubDate>
       
-      <guid>https://www.cs.toronto.edu/~frossard/tags/convolutional-neural-networks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>https://www.cs.toronto.edu/~frossard/tags/machine-learning/</link>
-      <pubDate>Wed, 01 Jun 2016 03:05:30 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mnist</title>
-      <link>https://www.cs.toronto.edu/~frossard/tags/mnist/</link>
-      <pubDate>Thu, 02 Jun 2016 23:27:17 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/tags/mnist/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Numpy</title>
-      <link>https://www.cs.toronto.edu/~frossard/tags/numpy/</link>
-      <pubDate>Sun, 29 May 2016 12:40:53 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/tags/numpy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pre Trained Models</title>
-      <link>https://www.cs.toronto.edu/~frossard/tags/pre-trained-models/</link>
-      <pubDate>Fri, 17 Jun 2016 01:34:54 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/tags/pre-trained-models/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Regression</title>
-      <link>https://www.cs.toronto.edu/~frossard/tags/regression/</link>
-      <pubDate>Wed, 01 Jun 2016 03:05:30 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/tags/regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tensorflow</title>
-      <link>https://www.cs.toronto.edu/~frossard/tags/tensorflow/</link>
-      <pubDate>Thu, 02 Jun 2016 23:27:17 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/tags/tensorflow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vgg16</title>
-      <link>https://www.cs.toronto.edu/~frossard/tags/vgg16/</link>
-      <pubDate>Fri, 17 Jun 2016 01:34:54 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/tags/vgg16/</guid>
+      <guid>http://127.0.0.1/tags/pentest/</guid>
       <description></description>
     </item>
     

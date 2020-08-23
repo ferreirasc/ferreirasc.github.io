@@ -1,100 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Davi Frossard</title>
-    <link>https://www.cs.toronto.edu/~frossard/</link>
-    <description>Recent content on Davi Frossard</description>
+    <title>Leonardo Ferreira</title>
+    <link>http://127.0.0.1/</link>
+    <description>Recent content on Leonardo Ferreira</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 07 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 00:30:20 -0400</lastBuildDate>
     
-	<atom:link href="https://www.cs.toronto.edu/~frossard/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://127.0.0.1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Active Directory Notes</title>
+      <link>http://127.0.0.1/post/ad_notes/</link>
+      <pubDate>Thu, 28 May 2020 00:30:20 -0400</pubDate>
+      
+      <guid>http://127.0.0.1/post/ad_notes/</guid>
+      <description>AD Delegation Unconstrained Delegation Finding computers/users with unconstrained delegation:  AD Module  Get-ADComputer -Filter {TrustedForDelegation -eq $True} Get-ADUser -Filter {TrustedForDelegation -eq $True}   Powerview  Import-Module .\PowerView.ps1 Get-NetComputer -Unconstrained Get-NetUser -Unconstrained  Exploiting (from a Windows box) daskdalkas
+Constrained Delegation Finding computers/users with constrained delegation . .\PowerView.ps1 Get-DomainUser -TrustedToAuth Get-DomainComputer -TrustedToAuth  Exploiting (from a Windows box) Ask a TGT to impersonate the user allowed to delegate privs firstly (lab.</description>
+    </item>
     
     <item>
       <title>About Me</title>
-      <link>https://www.cs.toronto.edu/~frossard/about/</link>
+      <link>http://127.0.0.1/about/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cs.toronto.edu/~frossard/about/</guid>
-      <description>I am a Research Engineer at Uber Advanced Technologies Group (ATG) in Toronto, supervised by prof. Raquel Urtasun. Previously, I obtained my MSc. at the University of Toronto, also under the supervision of prof. Urtasun.
- Background  2017-2018 Masters of Science degree in Computer Science - University of Toronto - Canada 2015-2016 Visiting Student - Electrical &amp;amp; Computer Engineering - University of Toronto - Canada 2012-2017 Undergraduate degree in Computer Engineering - Federal University of Espirito Santo - Brazil   Publications and Patents  D.</description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>https://www.cs.toronto.edu/~frossard/teaching/</link>
-      <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/teaching/</guid>
-      <description> University of Toronto  Winter 2017  Guest lecture on Multiple Object Tracking - [CSC2541: Sport Analytics]   Federal University of Espirito Santo  Fall 2016  Introduction to Machine Learning - [Course Material] Introcomp (Introduction to Programming for High School Students) - [Project Website]  JACEE 2015 (Refresher Courses in Electronics and Computing)  Introduction to Robotics with Arduino (Minicourse)  Fall &amp;amp; Winter 2013  TA for Computer Programming 1 (Functional Programming in Haskell)   </description>
-    </item>
-    
-    <item>
-      <title>VGG in TensorFlow</title>
-      <link>https://www.cs.toronto.edu/~frossard/post/vgg16/</link>
-      <pubDate>Fri, 17 Jun 2016 01:34:54 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/post/vgg16/</guid>
-      <description>Files  Model weights - vgg16_weights.npz TensorFlow model - vgg16.py Class names - imagenet_classes.py Example input - laska.png  To test run it, download all files to the same folder and run
-python vgg16.py  Introduction VGG is a convolutional neural network model proposed by K. Simonyan and A. Zisserman from the University of Oxford in the paper &amp;ldquo;Very Deep Convolutional Networks for Large-Scale Image Recognition&amp;rdquo;  . The model achieves 92.</description>
-    </item>
-    
-    <item>
-      <title>Classification</title>
-      <link>https://www.cs.toronto.edu/~frossard/post/classification/</link>
-      <pubDate>Thu, 02 Jun 2016 23:27:17 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/post/classification/</guid>
-      <description>Introduction The problem of classification consists in assigning an observation to the category it belongs. That means, for instance, taking a picture of a handwritten digit and correctly classifying which digit (0-9) it is, matching pictures of faces to whom they belong or classifying the sentiment in a text. In general, when dealing with classification we use supervised learning (when we have an annotated training set from which we can learn our model - as we did up until this point).</description>
-    </item>
-    
-    <item>
-      <title>TensorFlow</title>
-      <link>https://www.cs.toronto.edu/~frossard/post/tensorflow/</link>
-      <pubDate>Wed, 01 Jun 2016 03:05:30 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/post/tensorflow/</guid>
-      <description>Introduction TensorFlow™ is an open source machine learning library for Python (and C++) initially developed by the Google Brain Team for research and released under the Apache 2.0 Open Source License on November 9th, 2015  . It is currently used by Google in their speech recognition, Gmail, Google Photos, Search services and recently adopted by the DeepMind team  .
-  Features Though TensorFlow was built with deep learning in mind, its framework is general enough so that we can also implement clustering methods, graphical models, optimization problems and others.</description>
-    </item>
-    
-    <item>
-      <title>Multiple Linear Regression</title>
-      <link>https://www.cs.toronto.edu/~frossard/post/multiple_linear_regression/</link>
-      <pubDate>Sun, 29 May 2016 12:40:53 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/post/multiple_linear_regression/</guid>
-      <description>This post is a continuation of Linear Regression.
-Introduction In multiple linear regression we extend the notion developed in linear regression to use multiple descriptive values in order to estimate the dependent variable, which effectively allows us to write more complex functions such as higher order polynomials ($y = \sum_{i_0}^{k} w_ix^i$), sinusoids ($y = w_1 sin(x) + w_2 cos(x)$) or a mix of functions ($y = w_1 sin(x_1) + w_2 cos(x_2) + x_1x_2$).</description>
-    </item>
-    
-    <item>
-      <title>Linear Regression with NumPy</title>
-      <link>https://www.cs.toronto.edu/~frossard/post/linear_regression/</link>
-      <pubDate>Sat, 28 May 2016 00:30:20 -0400</pubDate>
-      
-      <guid>https://www.cs.toronto.edu/~frossard/post/linear_regression/</guid>
-      <description>Introduction Linear regression is a method used to find a relationship between a dependent variable and a set of independent variables. In its simplest form it consist of fitting a function $ \boldsymbol{y} = w.\boldsymbol{x}+b $ to observed data, where $\boldsymbol{y}$ is the dependent variable, $\boldsymbol{x}$ the independent, $w$ the weight matrix and $b$ the bias.
-Illustratively, performing linear regression is the same as fitting a scatter plot to a line.</description>
+      <guid>http://127.0.0.1/about/</guid>
+      <description>TODO.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://www.cs.toronto.edu/~frossard/contact/</link>
+      <link>http://127.0.0.1/contact/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cs.toronto.edu/~frossard/contact/</guid>
+      <guid>http://127.0.0.1/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Multi-Task Generative Adversarial Imitation Learning</title>
-      <link>https://www.cs.toronto.edu/~frossard/mgan/</link>
+      <link>http://127.0.0.1/mgan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cs.toronto.edu/~frossard/mgan/</guid>
+      <guid>http://127.0.0.1/mgan/</guid>
       <description> Authors Wei Cui, Davi Frossard, Jingyao Li, Andy Toulis, Yatu Zhang
  Default Architecture  Asteroids Atlantis BeamRider Boxing Breakout CrazyClimber Enduro Pong Seaquest SpaceInvaders   512+512  Asteroids Atlantis BeamRider Boxing Breakout CrazyClimber Enduro Pong Seaquest SpaceInvaders   1024+1024  Asteroids Atlantis BeamRider Boxing Breakout CrazyClimber Enduro Pong Seaquest SpaceInvaders  </description>
     </item>
