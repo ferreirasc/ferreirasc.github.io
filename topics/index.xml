@@ -1,67 +1,86 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Topics on Leonardo Ferreira</title>
-    <link>https://ferreirasc.github.io/topics/</link>
-    <description>Recent content in Topics on Leonardo Ferreira</description>
+    <title>Topics on Davi Frossard</title>
+    <link>https://www.cs.toronto.edu/~frossard/topics/</link>
+    <description>Recent content in Topics on Davi Frossard</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 30 Jul 2017 22:22:03 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jun 2016 01:34:54 -0400</lastBuildDate>
     
-	<atom:link href="https://ferreirasc.github.io/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.cs.toronto.edu/~frossard/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Boot2root</title>
-      <link>https://ferreirasc.github.io/topics/boot2root/</link>
-      <pubDate>Sun, 30 Jul 2017 22:22:03 +0000</pubDate>
+      <title>Classification</title>
+      <link>https://www.cs.toronto.edu/~frossard/topics/classification/</link>
+      <pubDate>Fri, 17 Jun 2016 01:34:54 -0400</pubDate>
       
-      <guid>https://ferreirasc.github.io/topics/boot2root/</guid>
+      <guid>https://www.cs.toronto.edu/~frossard/topics/classification/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Competitive Programming</title>
-      <link>https://ferreirasc.github.io/topics/competitive-programming/</link>
-      <pubDate>Mon, 15 Aug 2016 22:06:03 +0000</pubDate>
+      <title>Gradient Descent</title>
+      <link>https://www.cs.toronto.edu/~frossard/topics/gradient-descent/</link>
+      <pubDate>Sat, 28 May 2016 00:30:20 -0400</pubDate>
       
-      <guid>https://ferreirasc.github.io/topics/competitive-programming/</guid>
+      <guid>https://www.cs.toronto.edu/~frossard/topics/gradient-descent/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Grafos</title>
-      <link>https://ferreirasc.github.io/topics/grafos/</link>
-      <pubDate>Mon, 15 Aug 2016 22:06:03 +0000</pubDate>
+      <title>Linear Regression</title>
+      <link>https://www.cs.toronto.edu/~frossard/topics/linear-regression/</link>
+      <pubDate>Wed, 01 Jun 2016 03:05:30 -0400</pubDate>
       
-      <guid>https://ferreirasc.github.io/topics/grafos/</guid>
+      <guid>https://www.cs.toronto.edu/~frossard/topics/linear-regression/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Introcomp</title>
-      <link>https://ferreirasc.github.io/topics/introcomp/</link>
-      <pubDate>Fri, 15 Jul 2016 17:42:03 +0000</pubDate>
+      <title>Logistic Regression</title>
+      <link>https://www.cs.toronto.edu/~frossard/topics/logistic-regression/</link>
+      <pubDate>Thu, 02 Jun 2016 23:27:17 -0400</pubDate>
       
-      <guid>https://ferreirasc.github.io/topics/introcomp/</guid>
+      <guid>https://www.cs.toronto.edu/~frossard/topics/logistic-regression/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Tutoriais</title>
-      <link>https://ferreirasc.github.io/topics/tutoriais/</link>
-      <pubDate>Mon, 15 Aug 2016 17:42:03 +0000</pubDate>
+      <title>Machine Learning</title>
+      <link>https://www.cs.toronto.edu/~frossard/topics/machine-learning/</link>
+      <pubDate>Fri, 17 Jun 2016 01:34:54 -0400</pubDate>
       
-      <guid>https://ferreirasc.github.io/topics/tutoriais/</guid>
+      <guid>https://www.cs.toronto.edu/~frossard/topics/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Wargames</title>
-      <link>https://ferreirasc.github.io/topics/wargames/</link>
-      <pubDate>Mon, 15 Aug 2016 21:27:03 +0000</pubDate>
+      <title>Multiple Linear Regression</title>
+      <link>https://www.cs.toronto.edu/~frossard/topics/multiple-linear-regression/</link>
+      <pubDate>Sun, 29 May 2016 12:40:53 -0400</pubDate>
       
-      <guid>https://ferreirasc.github.io/topics/wargames/</guid>
+      <guid>https://www.cs.toronto.edu/~frossard/topics/multiple-linear-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Gradient Descent</title>
+      <link>https://www.cs.toronto.edu/~frossard/topics/stochastic-gradient-descent/</link>
+      <pubDate>Sun, 29 May 2016 12:40:53 -0400</pubDate>
+      
+      <guid>https://www.cs.toronto.edu/~frossard/topics/stochastic-gradient-descent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tensorflow</title>
+      <link>https://www.cs.toronto.edu/~frossard/topics/tensorflow/</link>
+      <pubDate>Fri, 17 Jun 2016 01:34:54 -0400</pubDate>
+      
+      <guid>https://www.cs.toronto.edu/~frossard/topics/tensorflow/</guid>
       <description></description>
     </item>
     

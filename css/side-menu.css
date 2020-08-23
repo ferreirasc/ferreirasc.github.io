@@ -44,6 +44,9 @@ The content `<div>` is where all your content goes.
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.6em;
+    text-align: justify;
+	counter-reset: figures;
+	counter-reset: references;
 }
 
 .header {
@@ -71,14 +74,118 @@ The content `<div>` is where all your content goes.
     color: #888;
 }
 
+a#bib::after {
+    counter-increment: references;
+    content: '[' counter(references) ']';
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+}
 
+
+.figure {
+	padding: 0.9em;
+	display:table;
+	background: #fff;
+	margin: 0 auto 1em;
+	counter-increment: figures;
+	max-width:80%;
+}
+
+.figure img {
+	margin: 0 auto;
+	display: block;
+	max-width: 100%;
+}
+
+.figure a#bib::after {
+    color: #F1F1F1;
+}
+
+.figure a#bib:hover:after {
+    color: #B1B1B1;
+}
+
+
+.figure figcaption {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.8em;
+	padding: .5em;
+	text-align: center;
+	color: #fff;
+	background: #696969;
+}
+
+.figure figcaption:before {
+	content: 'Fig. ' counter(figures) ' - ';
+}
+
+
+#toc #toctitle {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    border-bottom: 1px solid #aaa;
+}
+
+#toc {
+    font-variant: small-caps;
+    display: inline;
+    float:right;
+	list-style: none;
+	padding: 5px;
+    border: 1px solid #aaa;
+    background-color:#f9f9f9;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    margin-top: 0;
+    min-width:250px;
+}
+
+#toc ul:first-child {
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+f0a9
+
+#toc ul {
+    padding-left: 15px;
+    margin: 0;
+}
+
+#toc li {
+	overflow: hidden;
+	padding-bottom: 2px;
+}
+
+#toc li:before {
+  content: "\f061"; 
+  font-family: FontAwesome;
+  font-size:15px;
+  display: inline-block;
+  width: 1em; 
+}
+
+#toc a {
+    font-size:15px;
+	display: inline-block;
+	bottom: -4px;
+}
+
+#toc a {
+	padding: 0 0 3px 2px;
+}
 
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
 */
-
-
 
 #menu {
     margin-left: -150px; /* "#menu" width */
@@ -92,7 +199,6 @@ appears on the left side of the page.
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
-
     /*
     All anchors inside the menu should be styled like this.
     */
@@ -111,23 +217,6 @@ appears on the left side of the page.
         background: transparent;
     }
 
-#avatar {
-    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
-    background-image: url('http://i.imgur.com/phUJOHU.png');
-    
-    /* make a square container */
-    height: 120px;
-
-    /* fill the container, preserving aspect ratio, and cropping to fit */
-    background-size: cover;
-    margin-left: -30px; /* "#menu" width */
-    width: 120px;
-    /* center the image vertically and horizontally */
-    background-position: center;
-
-    /* round the edges to a circle with border radius 1/2 container size */
-    border-radius: 50%;
-}
     /*
     Add that light border to separate items into groups.
     */
@@ -135,7 +224,6 @@ appears on the left side of the page.
     #menu .pure-menu .menu-item-divided {
         border-top: 1px solid #333;
     }
-    
         /*
         Change color of the anchor links on hover/focus.
         */
@@ -252,6 +340,8 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     #layout.active .menu-link {
         left: 150px;
     }
+    
+
 }
 
 @media (max-width: 48em) {
@@ -265,5 +355,48 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         position: relative;
         left: 150px;
     }
+    #toc {
+        float:none;
+        text-align:center;
+	    border: 0px;
+	    border-radius:0px;
+	    background-color:#fff;
+    }
 }
 
+.avatar {
+    display: block;
+    max-width:120px;
+    max-height:120px;
+    width: auto;
+    height: auto;
+    border:5px solid white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px
+    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+    -webkit-filter: grayscale(0.7);
+    -moz-filter: grayscale(0.7)
+    filter: grayscale(0.7);
+
+}
+
+.avatar:hover {
+    -webkit-filter: grayscale(0.2);
+    -moz-filter: grayscale(0.2);
+    filter: grayscale(0.2);
+
+}
+
+hr {
+    filter: alpha(opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+    -moz-opacity: 0.30;
+    opacity: 0.3;
+    margin-bottom: -0.7em;
+    margin-top: 1.7em;
+}

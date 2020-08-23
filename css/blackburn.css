@@ -62,10 +62,6 @@ article > footer {
   font-size: 0.9em;
 }
 
-i {
-  display: inline-block;
-  margin-right: 0.2em;
-}
 
 .pagination {
   text-align: center;
@@ -75,3 +71,18 @@ i {
 .pagination a {
   color: #265778;
 }
+
+.e-mail:before { 
+  content: attr(host) "\0040" attr(usr);
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #777;
+}
+

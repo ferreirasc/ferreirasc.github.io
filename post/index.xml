@@ -1,134 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Leonardo Ferreira</title>
-    <link>https://ferreirasc.github.io/post/</link>
-    <description>Recent content in Posts on Leonardo Ferreira</description>
+    <title>Posts on Davi Frossard</title>
+    <link>https://www.cs.toronto.edu/~frossard/post/</link>
+    <description>Recent content in Posts on Davi Frossard</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 30 Jul 2017 22:22:03 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jun 2016 01:34:54 -0400</lastBuildDate>
     
-	<atom:link href="https://ferreirasc.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.cs.toronto.edu/~frossard/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Kioptrix Level 1.2 (Level 3)</title>
-      <link>https://ferreirasc.github.io/post/kioptrix_level_1_2/</link>
-      <pubDate>Sun, 30 Jul 2017 22:22:03 +0000</pubDate>
+      <title>VGG in TensorFlow</title>
+      <link>https://www.cs.toronto.edu/~frossard/post/vgg16/</link>
+      <pubDate>Fri, 17 Jun 2016 01:34:54 -0400</pubDate>
       
-      <guid>https://ferreirasc.github.io/post/kioptrix_level_1_2/</guid>
-      <description>&lt;p&gt;Let&amp;rsquo;s take a look at the level 3 of Kioptrix series. This level is a little more tricky than previous two. I&amp;rsquo;ll show one of two possible solutions for this challenge and just comment the second solution at the end.&lt;/p&gt;
-
-&lt;p&gt;Again, this VM can be found at &lt;a href=&#34;http://www.kioptrix.com/&#34;/&gt;Kioptrix webpage&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://www.cs.toronto.edu/~frossard/post/vgg16/</guid>
+      <description>Files  Model weights - vgg16_weights.npz TensorFlow model - vgg16.py Class names - imagenet_classes.py Example input - laska.png  To test run it, download all files to the same folder and run
+python vgg16.py  Introduction VGG is a convolutional neural network model proposed by K. Simonyan and A. Zisserman from the University of Oxford in the paper &amp;ldquo;Very Deep Convolutional Networks for Large-Scale Image Recognition&amp;rdquo;  . The model achieves 92.</description>
     </item>
     
     <item>
-      <title>Kioptrix Level 1.1 (Level 2)</title>
-      <link>https://ferreirasc.github.io/post/kioptrix_level_1_1/</link>
-      <pubDate>Fri, 28 Jul 2017 15:51:03 +0000</pubDate>
+      <title>Classification</title>
+      <link>https://www.cs.toronto.edu/~frossard/post/classification/</link>
+      <pubDate>Thu, 02 Jun 2016 23:27:17 -0400</pubDate>
       
-      <guid>https://ferreirasc.github.io/post/kioptrix_level_1_1/</guid>
-      <description>&lt;p&gt;Having completed Level 1, we will now play Level 2 of the Kioptrix series. This VM can be found at &lt;a href=&#34;http://www.kioptrix.com/&#34;/&gt;Kioptrix webpage&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://www.cs.toronto.edu/~frossard/post/classification/</guid>
+      <description>Introduction The problem of classification consists in assigning an observation to the category it belongs. That means, for instance, taking a picture of a handwritten digit and correctly classifying which digit (0-9) it is, matching pictures of faces to whom they belong or classifying the sentiment in a text. In general, when dealing with classification we use supervised learning (when we have an annotated training set from which we can learn our model - as we did up until this point).</description>
     </item>
     
     <item>
-      <title>Kioptrix Level 1</title>
-      <link>https://ferreirasc.github.io/post/kioptrix_level_1/</link>
-      <pubDate>Sun, 12 Mar 2017 17:42:03 +0000</pubDate>
+      <title>TensorFlow</title>
+      <link>https://www.cs.toronto.edu/~frossard/post/tensorflow/</link>
+      <pubDate>Wed, 01 Jun 2016 03:05:30 -0400</pubDate>
       
-      <guid>https://ferreirasc.github.io/post/kioptrix_level_1/</guid>
-      <description>&lt;p&gt;Let&amp;rsquo;s play with the Kioptrix level 1 VM. This Kioptrix VM Image are easy challenges and the object of the game is to acquire root access via any means possible (except actually hacking the VM server or player).&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://www.cs.toronto.edu/~frossard/post/tensorflow/</guid>
+      <description>Introduction TensorFlow™ is an open source machine learning library for Python (and C++) initially developed by the Google Brain Team for research and released under the Apache 2.0 Open Source License on November 9th, 2015  . It is currently used by Google in their speech recognition, Gmail, Google Photos, Search services and recently adopted by the DeepMind team  .
+  Features Though TensorFlow was built with deep learning in mind, its framework is general enough so that we can also implement clustering methods, graphical models, optimization problems and others.</description>
     </item>
     
     <item>
-      <title>[BR-SPOJ] 11011 - Desafio Cartográfico</title>
-      <link>https://ferreirasc.github.io/post/spoj_desafio_cartografico/</link>
-      <pubDate>Mon, 15 Aug 2016 22:06:03 +0000</pubDate>
+      <title>Multiple Linear Regression</title>
+      <link>https://www.cs.toronto.edu/~frossard/post/multiple_linear_regression/</link>
+      <pubDate>Sun, 29 May 2016 12:40:53 -0400</pubDate>
       
-      <guid>https://ferreirasc.github.io/post/spoj_desafio_cartografico/</guid>
-      <description>&lt;p&gt;Dado um grafo G não-direcionado, não-valorado, conexo e acíclico, determinar a distância entre os pares de vértices mais distantes em G.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Problema: &lt;a href=&#34;http://br.spoj.com/problems/CARTOG11/&#34;&gt;http://br.spoj.com/problems/CARTOG11/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://www.cs.toronto.edu/~frossard/post/multiple_linear_regression/</guid>
+      <description>This post is a continuation of Linear Regression.
+Introduction In multiple linear regression we extend the notion developed in linear regression to use multiple descriptive values in order to estimate the dependent variable, which effectively allows us to write more complex functions such as higher order polynomials ($y = \sum_{i_0}^{k} w_ix^i$), sinusoids ($y = w_1 sin(x) + w_2 cos(x)$) or a mix of functions ($y = w_1 sin(x_1) + w_2 cos(x_2) + x_1x_2$).</description>
     </item>
     
     <item>
-      <title>[IO Smash The Stack] Level03</title>
-      <link>https://ferreirasc.github.io/post/smash_the_stack3/</link>
-      <pubDate>Mon, 15 Aug 2016 21:27:03 +0000</pubDate>
+      <title>Linear Regression with NumPy</title>
+      <link>https://www.cs.toronto.edu/~frossard/post/linear_regression/</link>
+      <pubDate>Sat, 28 May 2016 00:30:20 -0400</pubDate>
       
-      <guid>https://ferreirasc.github.io/post/smash_the_stack3/</guid>
-      <description>&lt;p&gt;Com o level 2 concluido, temos acesso ao servidor ssh do level03! :-)&lt;/p&gt;
-
-&lt;p&gt;No diretório &amp;ldquo;/levels&amp;rdquo;, vemos dois arquivos associados a esse level: level03 e level03.c.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[IO Smash The Stack] Level02</title>
-      <link>https://ferreirasc.github.io/post/smash_the_stack2/</link>
-      <pubDate>Mon, 15 Aug 2016 21:16:03 +0000</pubDate>
-      
-      <guid>https://ferreirasc.github.io/post/smash_the_stack2/</guid>
-      <description>&lt;p&gt;Com o level01 concluido, obtemos acesso ao shell que nos provê permissões para visualizar a senha do level02.&lt;/p&gt;
-
-&lt;p&gt;Conectando ao servidor ssh do level2, observamos 4 arquivos associados a esse level: dois binários SUID de 32-bits, level02 e level02_alt, e seus códigos C correspondentes, level02.c e level02_alt.c. Nesse post estarei focando no level02.c e seu binário level02, que é uma das duas formas de concluir esse nível.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[IO Smash The Stack] Level01</title>
-      <link>https://ferreirasc.github.io/post/smash_the_stack1/</link>
-      <pubDate>Mon, 15 Aug 2016 20:45:03 +0000</pubDate>
-      
-      <guid>https://ferreirasc.github.io/post/smash_the_stack1/</guid>
-      <description>&lt;p&gt;O &amp;ldquo;IO Smash The Stack&amp;rdquo; é um conhecido wargame da Smash The Stack Network. Um &amp;ldquo;wargame&amp;rdquo;, na cultura hacker, é o nome dado a um jogo contendo desafios de segurança, geralmente divididos em níveis (levels), no quais se deve explorar alguma vulnerabilidade para conseguir acesso aos próximos níveis. Obviamente, a dificuldade dos desafios evolui a cada nível, o que torna as coisas mais divertidas.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Instalando o sistema BOCA Online Contest</title>
-      <link>https://ferreirasc.github.io/post/manual_boca/</link>
-      <pubDate>Mon, 15 Aug 2016 17:42:03 +0000</pubDate>
-      
-      <guid>https://ferreirasc.github.io/post/manual_boca/</guid>
-      <description>&lt;p&gt;Neste tutorial estarei demonstrando, passo-a-passo, como instalar e configurar o sistema BOCA Online Contest Administrator, utilizado para criar e gerenciar ambientes para competições de programação.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[Introcomp] Programando C em Windows e Linux</title>
-      <link>https://ferreirasc.github.io/post/introcomp_tutorial01/</link>
-      <pubDate>Fri, 15 Jul 2016 17:42:03 +0000</pubDate>
-      
-      <guid>https://ferreirasc.github.io/post/introcomp_tutorial01/</guid>
-      <description>&lt;p&gt;Uma breve explicação de como preparar seu ambiente, seja Windows ou Linux, para programar utilizando C. Direcionado aos alunos do Introcomp.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>O problema da satisfatibilidade booleana (SAT)</title>
-      <link>https://ferreirasc.github.io/post/spoj_cardapio/</link>
-      <pubDate>Tue, 15 Mar 2016 21:10:03 +0000</pubDate>
-      
-      <guid>https://ferreirasc.github.io/post/spoj_cardapio/</guid>
-      <description>&lt;p&gt;Na teoria da complexidade computacional, o &lt;strong&gt;problema da satisfatibilidade booleana (SAT)&lt;/strong&gt; é reconhecidamente um dos primeiros NP-completo. O problema visa encontrar uma solução verdade para uma dada fórmula booleana, e caso encontrada, a fórmula é considerada &amp;ldquo;satisfatível&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://www.cs.toronto.edu/~frossard/post/linear_regression/</guid>
+      <description>Introduction Linear regression is a method used to find a relationship between a dependent variable and a set of independent variables. In its simplest form it consist of fitting a function $ \boldsymbol{y} = w.\boldsymbol{x}+b $ to observed data, where $\boldsymbol{y}$ is the dependent variable, $\boldsymbol{x}$ the independent, $w$ the weight matrix and $b$ the bias.
+Illustratively, performing linear regression is the same as fitting a scatter plot to a line.</description>
     </item>
     
   </channel>

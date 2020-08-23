@@ -3,224 +3,190 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ferreirasc.github.io/post/kioptrix_level_1_2/</loc>
-    <lastmod>2017-07-30T22:22:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/about/</loc>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/post/kioptrix_level_1_1/</loc>
-    <lastmod>2017-07-28T15:51:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/teaching/</loc>
+    <lastmod>2016-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/post/kioptrix_level_1/</loc>
-    <lastmod>2017-03-12T17:42:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/post/vgg16/</loc>
+    <lastmod>2016-06-17T01:34:54-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/post/spoj_desafio_cartografico/</loc>
-    <lastmod>2016-08-15T22:06:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/post/classification/</loc>
+    <lastmod>2016-06-02T23:27:17-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/post/smash_the_stack3/</loc>
-    <lastmod>2016-08-15T21:27:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/post/tensorflow/</loc>
+    <lastmod>2016-06-01T03:05:30-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/post/smash_the_stack2/</loc>
-    <lastmod>2016-08-15T21:16:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/post/multiple_linear_regression/</loc>
+    <lastmod>2016-05-29T12:40:53-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/post/smash_the_stack1/</loc>
-    <lastmod>2016-08-15T20:45:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/post/linear_regression/</loc>
+    <lastmod>2016-05-29T02:22:20-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/post/manual_boca/</loc>
-    <lastmod>2016-08-15T17:42:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/contact/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/post/introcomp_tutorial01/</loc>
-    <lastmod>2016-07-15T17:42:03+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ferreirasc.github.io/contact/</loc>
-    <lastmod>2016-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ferreirasc.github.io/about/</loc>
-    <lastmod>2016-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ferreirasc.github.io/post/spoj_cardapio/</loc>
-    <lastmod>2016-03-15T21:10:03+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ferreirasc.github.io/tags/2-sat/</loc>
-    <lastmod>2016-03-15T21:10:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/level/basic/</loc>
+    <lastmod>2016-06-02T23:27:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/boca/</loc>
-    <lastmod>2016-08-15T17:42:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/topics/classification/</loc>
+    <lastmod>2016-06-17T01:34:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/topics/boot2root/</loc>
-    <lastmod>2017-07-30T22:22:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/tags/classification/</loc>
+    <lastmod>2016-06-02T23:27:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/boot2root/</loc>
-    <lastmod>2017-07-30T22:22:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/tags/convolutional-neural-networks/</loc>
+    <lastmod>2016-06-17T01:34:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/topics/competitive-programming/</loc>
-    <lastmod>2016-08-15T22:06:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/</loc>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/devc&#43;&#43;/</loc>
-    <lastmod>2016-07-15T17:42:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/topics/gradient-descent/</loc>
+    <lastmod>2016-05-29T02:22:20-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/topics/grafos/</loc>
-    <lastmod>2016-08-15T22:06:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/level/intermediate/</loc>
+    <lastmod>2016-06-17T01:34:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/grafos/</loc>
-    <lastmod>2016-08-15T22:06:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/level/</loc>
+    <lastmod>2016-06-02T23:27:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/hacking/</loc>
-    <lastmod>2017-07-30T22:22:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/topics/linear-regression/</loc>
+    <lastmod>2016-06-01T03:05:30-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/helloworld/</loc>
-    <lastmod>2016-07-15T17:42:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/topics/logistic-regression/</loc>
+    <lastmod>2016-06-02T23:27:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/topics/introcomp/</loc>
-    <lastmod>2016-07-15T17:42:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/topics/machine-learning/</loc>
+    <lastmod>2016-06-17T01:34:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/introcomp/</loc>
-    <lastmod>2016-07-15T17:42:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/tags/machine-learning/</loc>
+    <lastmod>2016-06-01T03:05:30-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/kioptrix/</loc>
-    <lastmod>2017-07-30T22:22:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/tags/mnist/</loc>
+    <lastmod>2016-06-02T23:27:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/</loc>
-    <lastmod>2017-07-30T22:22:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/mgan/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.cs.toronto.edu/~frossard/topics/multiple-linear-regression/</loc>
+    <lastmod>2016-05-29T12:40:53-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/linux/</loc>
-    <lastmod>2016-07-15T17:42:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/tags/numpy/</loc>
+    <lastmod>2016-05-29T12:40:53-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/maratona/</loc>
-    <lastmod>2016-08-15T17:42:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/post/</loc>
+    <lastmod>2016-06-17T01:34:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/oscp/</loc>
-    <lastmod>2017-07-30T22:22:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/tags/pre-trained-models/</loc>
+    <lastmod>2016-06-17T01:34:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/post/</loc>
-    <lastmod>2017-07-30T22:22:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/tags/regression/</loc>
+    <lastmod>2016-06-01T03:05:30-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/programa%C3%A7%C3%A3o/</loc>
-    <lastmod>2016-08-15T17:42:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/topics/stochastic-gradient-descent/</loc>
+    <lastmod>2016-05-29T12:40:53-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/programming/</loc>
-    <lastmod>2016-08-15T22:06:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/tags/</loc>
+    <lastmod>2016-06-02T23:27:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/smashthestack-i/o/</loc>
-    <lastmod>2016-08-15T21:27:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/topics/tensorflow/</loc>
+    <lastmod>2016-06-17T01:34:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/spojbr/</loc>
-    <lastmod>2016-08-15T22:06:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/tags/tensorflow/</loc>
+    <lastmod>2016-06-02T23:27:17-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/tags/</loc>
-    <lastmod>2016-03-15T21:10:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/topics/</loc>
+    <lastmod>2016-06-17T01:34:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ferreirasc.github.io/topics/</loc>
-    <lastmod>2017-07-30T22:22:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ferreirasc.github.io/topics/tutoriais/</loc>
-    <lastmod>2016-08-15T17:42:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ferreirasc.github.io/tags/wargame/</loc>
-    <lastmod>2016-08-15T21:27:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ferreirasc.github.io/topics/wargames/</loc>
-    <lastmod>2016-08-15T21:27:03+00:00</lastmod>
+    <loc>https://www.cs.toronto.edu/~frossard/tags/vgg16/</loc>
+    <lastmod>2016-06-17T01:34:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
