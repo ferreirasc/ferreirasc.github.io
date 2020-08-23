@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leonardo Ferreira</title>
-    <link>http://127.0.0.1/</link>
+    <link>http://ferreirasc.github.io/</link>
     <description>Recent content on Leonardo Ferreira</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Thu, 28 May 2020 00:30:20 -0400</lastBuildDate>
     
-	<atom:link href="http://127.0.0.1/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://ferreirasc.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Active Directory Notes</title>
-      <link>http://127.0.0.1/post/ad_notes/</link>
+      <link>http://ferreirasc.github.io/post/ad_notes/</link>
       <pubDate>Thu, 28 May 2020 00:30:20 -0400</pubDate>
       
-      <guid>http://127.0.0.1/post/ad_notes/</guid>
+      <guid>http://ferreirasc.github.io/post/ad_notes/</guid>
       <description>AD Delegation Unconstrained Delegation Finding computers/users with unconstrained delegation:  AD Module  Get-ADComputer -Filter {TrustedForDelegation -eq $True} Get-ADUser -Filter {TrustedForDelegation -eq $True}   Powerview  Import-Module .\PowerView.ps1 Get-NetComputer -Unconstrained Get-NetUser -Unconstrained  Exploiting (from a Windows box) daskdalkas
 Constrained Delegation Finding computers/users with constrained delegation . .\PowerView.ps1 Get-DomainUser -TrustedToAuth Get-DomainComputer -TrustedToAuth  Exploiting (from a Windows box) Ask a TGT to impersonate the user allowed to delegate privs firstly (lab.</description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>http://127.0.0.1/about/</link>
+      <link>http://ferreirasc.github.io/about/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://127.0.0.1/about/</guid>
+      <guid>http://ferreirasc.github.io/about/</guid>
       <description>TODO.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>http://127.0.0.1/contact/</link>
+      <link>http://ferreirasc.github.io/contact/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://127.0.0.1/contact/</guid>
+      <guid>http://ferreirasc.github.io/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Multi-Task Generative Adversarial Imitation Learning</title>
-      <link>http://127.0.0.1/mgan/</link>
+      <link>http://ferreirasc.github.io/mgan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://127.0.0.1/mgan/</guid>
+      <guid>http://ferreirasc.github.io/mgan/</guid>
       <description> Authors Wei Cui, Davi Frossard, Jingyao Li, Andy Toulis, Yatu Zhang
  Default Architecture  Asteroids Atlantis BeamRider Boxing Breakout CrazyClimber Enduro Pong Seaquest SpaceInvaders   512+512  Asteroids Atlantis BeamRider Boxing Breakout CrazyClimber Enduro Pong Seaquest SpaceInvaders   1024+1024  Asteroids Atlantis BeamRider Boxing Breakout CrazyClimber Enduro Pong Seaquest SpaceInvaders  </description>
     </item>

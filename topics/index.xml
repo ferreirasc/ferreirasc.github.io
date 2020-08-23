@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics on Leonardo Ferreira</title>
-    <link>http://127.0.0.1/topics/</link>
+    <link>http://ferreirasc.github.io/topics/</link>
     <description>Recent content in Topics on Leonardo Ferreira</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Thu, 28 May 2020 00:30:20 -0400</lastBuildDate>
     
-	<atom:link href="http://127.0.0.1/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://ferreirasc.github.io/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Notes</title>
-      <link>http://127.0.0.1/topics/notes/</link>
+      <link>http://ferreirasc.github.io/topics/notes/</link>
       <pubDate>Thu, 28 May 2020 00:30:20 -0400</pubDate>
       
-      <guid>http://127.0.0.1/topics/notes/</guid>
+      <guid>http://ferreirasc.github.io/topics/notes/</guid>
       <description></description>
     </item>
     
