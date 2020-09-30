@@ -18,8 +18,7 @@
       <pubDate>Thu, 28 May 2020 00:30:20 -0400</pubDate>
       
       <guid>https://ferreirasc.github.io/post/ad_notes/</guid>
-      <description>AD Delegation Unconstrained Delegation Finding computers/users with unconstrained delegation:  AD Module  Get-ADComputer -Filter {TrustedForDelegation -eq $True} Get-ADUser -Filter {TrustedForDelegation -eq $True}   Powerview  Import-Module .\PowerView.ps1 Get-NetComputer -Unconstrained Get-NetUser -Unconstrained  Exploiting (from a Windows box) daskdalkas
-Constrained Delegation Finding computers/users with constrained delegation . .\PowerView.ps1 Get-DomainUser -TrustedToAuth Get-DomainComputer -TrustedToAuth  Exploiting (from a Windows box) Ask a TGT to impersonate the user allowed to delegate privs firstly (lab.</description>
+      <description>&lt;p&gt;AD Notes for Pentesting / RedTeam&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,16 +37,6 @@ Constrained Delegation Finding computers/users with constrained delegation . .\P
       
       <guid>https://ferreirasc.github.io/contact/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Multi-Task Generative Adversarial Imitation Learning</title>
-      <link>https://ferreirasc.github.io/mgan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferreirasc.github.io/mgan/</guid>
-      <description> Authors Wei Cui, Davi Frossard, Jingyao Li, Andy Toulis, Yatu Zhang
- Default Architecture  Asteroids Atlantis BeamRider Boxing Breakout CrazyClimber Enduro Pong Seaquest SpaceInvaders   512+512  Asteroids Atlantis BeamRider Boxing Breakout CrazyClimber Enduro Pong Seaquest SpaceInvaders   1024+1024  Asteroids Atlantis BeamRider Boxing Breakout CrazyClimber Enduro Pong Seaquest SpaceInvaders  </description>
     </item>
     
   </channel>
