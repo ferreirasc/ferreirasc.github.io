@@ -45,8 +45,6 @@ The content `<div>` is where all your content goes.
     margin-bottom: 50px;
     line-height: 1.6em;
     text-align: justify;
-	counter-reset: figures;
-	counter-reset: references;
 }
 
 .header {
@@ -74,25 +72,6 @@ The content `<div>` is where all your content goes.
     color: #888;
 }
 
-a#bib::after {
-    counter-increment: references;
-    content: '[' counter(references) ']';
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-    top: -0.5em;
-}
-
-
-.figure {
-	padding: 0.9em;
-	display:table;
-	background: #fff;
-	margin: 0 auto 1em;
-	counter-increment: figures;
-	max-width:80%;
-}
 
 .figure img {
 	margin: 0 auto;
@@ -107,23 +86,6 @@ a#bib::after {
 .figure a#bib:hover:after {
     color: #B1B1B1;
 }
-
-
-.figure figcaption {
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 0.8em;
-	padding: .5em;
-	text-align: center;
-	color: #fff;
-	background: #696969;
-}
-
-.figure figcaption:before {
-	content: 'Fig. ' counter(figures) ' - ';
-}
-
 
 #toc #toctitle {
     text-align: center;
