@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacking on Leonardo Ferreira</title>
+    <link>https://ferreirasc.github.io/tags/hacking/</link>
+    <description>Recent content in Hacking on Leonardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 03 Jan 2016 01:07:23 -0400</lastBuildDate>
+    
+	<atom:link href="https://ferreirasc.github.io/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IO Smash The Stack - Level03</title>
+      <link>https://ferreirasc.github.io/post/smash_the_stack3/</link>
+      <pubDate>Sun, 03 Jan 2016 01:07:23 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/post/smash_the_stack3/</guid>
+      <description>&lt;p&gt;Com o level 2 concluido, temos acesso ao servidor ssh do level03.&lt;/p&gt;
+
+&lt;p&gt;No diretório “/levels”, vemos dois arquivos associados a esse level: level03 e level03.c.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IO Smash The Stack - Level02</title>
+      <link>https://ferreirasc.github.io/post/smash_the_stack2/</link>
+      <pubDate>Sat, 02 Jan 2016 14:21:23 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/post/smash_the_stack2/</guid>
+      <description>&lt;p&gt;Com o level01 concluido, obtemos acesso ao shell que nos provê permissões para visualizar a senha do level02.&lt;/p&gt;
+
+&lt;p&gt;Conectando ao servidor ssh do level2, observamos 4 arquivos associados a esse level: dois binários SUID de 32-bits, level02 e level02_alt, e seus códigos C correspondentes, level02.c e level02_alt.c. Nesse post estarei focando no level02.c e seu binário level02, que é uma das duas formas de concluir esse nível.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IO Smash The Stack - Level01</title>
+      <link>https://ferreirasc.github.io/post/smash_the_stack1/</link>
+      <pubDate>Fri, 01 Jan 2016 22:01:23 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/post/smash_the_stack1/</guid>
+      <description>&lt;p&gt;O “IO Smash The Stack” é um conhecido wargame da Smash The Stack Network. Um “wargame”, na cultura hacker, é o nome dado a um jogo contendo desafios de segurança, geralmente divididos em levels, no quais se deve explorar alguma vulnerabilidade para conseguir acesso aos próximos níveis. Obviamente, a dificuldade dos desafios evolui a cada nível, o que torna as coisas mais divertidas.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

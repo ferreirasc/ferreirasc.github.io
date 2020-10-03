@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boca on Leonardo Ferreira</title>
+    <link>https://ferreirasc.github.io/tags/boca/</link>
+    <description>Recent content in Boca on Leonardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 24 Jun 2014 10:33:23 -0400</lastBuildDate>
+    
+	<atom:link href="https://ferreirasc.github.io/tags/boca/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Instalando o sistema BOCA Online Contest</title>
+      <link>https://ferreirasc.github.io/post/boca_tutorial/</link>
+      <pubDate>Tue, 24 Jun 2014 10:33:23 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/post/boca_tutorial/</guid>
+      <description>&lt;p&gt;Neste tutorial estarei demonstrando, passo-a-passo, como instalar e configurar o sistema BOCA Online Contest Administrator, utilizado para criar e gerenciar ambientes para competições de programação.&lt;/p&gt;
+
+&lt;p&gt;Este post é direcionado a disciplina de &amp;ldquo;Programação II&amp;rdquo; do curso de Engenharia de Computação da UFES (2014-2), na qual atuo como monitor.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
