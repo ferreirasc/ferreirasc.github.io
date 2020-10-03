@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  
+  <meta property="og:image" content="https://ferreirasc.github.io/post/crte_review/">
+  <meta property="og:image:type" content="image/jpg">
+  
+  <meta property="og:type" content="article">
+  <meta property="article:author" content="Leonardo Ferreira">
+  
+  <meta property="article:published_time" content="2020-01-31 02:22:20 -0400 -0400">
+  <meta property="fb:app_id" content="128539894229266"/>
+  <meta property="fb:admins" content="1234176778"/>
+  <meta name="generator" content="Hugo 0.53" />
+
+  <title>Certified Red Team Expert (CRTE) - Review &middot; Leonardo Ferreira</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+  <link rel="shortcut icon" href="https://ferreirasc.github.io/img/favicon.ico" type="image/x-icon" />
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+  
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { 
+          equationNumbers: { autoNumber: "AMS" },
+          extensions: ["AMSmath.js", "AMSsymbols.js"] 
+      }
+    },
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" } 
+    }
+});
+  MathJax.Hub.Queue(function() {
+  
+  
+  
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i = 0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script>
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://ferreirasc.github.io/"> ferreirasc:~#</a>
+
+
+
+<a class="pure-menu-heading brand" href="https://ferreirasc.github.io/about"><img class="avatar" src="https://ferreirasc.github.io/avatar.jpg"/></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/about/"><i class='fa fa-user fa-fw'></i>About Me</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/ferreirasc0" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/ferreirasc" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/ferreirasc" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/ferreirasc" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Certified Red Team Expert (CRTE) - Review</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>31 Jan 2020, 01:33</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://ferreirasc.github.io/topics/reviews">Reviews</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/pentesteracademy">PentesterAcademy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/crte">CRTE</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/crtp">CRTP</a>
+    
+  </div>
+  
+  
+  
+  
+  
+  <div>
+    <i class="fa fa-signal fa-fw"></i>
+      <a class="post-taxonomy-level" href="https://ferreirasc.github.io/level/basic">Basic</a>
+  </div>
+  
+  
+
+</div>
+
+
+  <p>I recently took the amazing &ldquo;Windows Red Team Lab&rdquo; course from PentesterAcademy, a prerequisite course for the Certified Red Team Expert (CRTE) certification. I must confess that I had my eye on this course for some time, mainly due to the topics covered in its content (anyone who knows me knows how much I like Active Directory exploitation and everything it involves ;). As I was a little tired of the HackTheBox boxes routine, I decided it would be a good time to start the lab and learn new AD stuff.</p>
+
+<p>The purpose of this review is just to pass on a little of the experience I had in the lab and in the exam. Obviously, I have no intention of providing spoilers, lab walkthrough nor anything like that.</p>
+
+<h2 id="the-lab"><strong>The Lab</strong></h2>
+
+<hr />
+
+<p>First of all, it should be noted that Windows RedTeam Lab is not an introductory course. Indeed, it is considered the &ldquo;next step&rdquo; to the &ldquo;Attacking and Defending Active Directory Lab&rdquo; course, which is a prerequisite course for obtaining the Certified Red Team Professional (CRTP) certification. Thus, if you are not familiar with Active Directory exploitation, I highly recommend that you take the &ldquo;Attacking and Defending Active Directory Lab&rdquo; course first before proceeding with Windows Red Team Lab.</p>
+
+<p>That said, the image below reflects exactly what will be found during the lab:</p>
+
+
+<figure class="figure">
+    <img src="crte_lab.png">
+</figure>
+
+
+
+<p>Pentesteracademy offers three purchase options for the course:</p>
+
+<ul>
+<li>30 days lab access</li>
+<li>60 days lab access</li>
+<li>90 days lab access</li>
+</ul>
+
+<p>Since I hadn&rsquo;t taken the &ldquo;Attacking and Defending AD Lab&rdquo; course before, I was worried that I couldn’t manage the lab in 30 days. So&hellip; I decided to buy 60 days of access, in the hope that it would be enough time to compromise all the boxes and collect all the flags.</p>
+
+<p>The lab starts with a non-privileged RDP access on a host positioned in the student network. All hosts in the environment (including the initial one) are fully patched and contain the latest Windows operating systems, plus UAC enabled, Windows Defender, AMSI, Constrained Language Mode and so on. No specific exploits are needed in the lab, it&rsquo;s all about AD misconfigurations.</p>
+
+<p>The student will be able to choose one of the two &ldquo;difficulty modes&rdquo; available in the lab: &ldquo;High&rdquo; and &ldquo;Normal&rdquo;. In case of &ldquo;High&rdquo; difficulty, you will only be able to connect to your initial box (student machine) via RDP. In other words, you probably shouldn&rsquo;t be able to use the student machine as a &ldquo;tunnel&rdquo; or &ldquo;pivot point&rdquo; to the lab network, which would allow to execute commands from your host (from my linux, for example). By default, the difficulty in the lab is set to &ldquo;High&rdquo;, but every month a student can change it up to two times if he wants. I decided to keep the difficulty at High to make things more challenging and also force myself to perform all the exploitation from a Windows box (as a pentester I almost always work from a Linux box in my day-to-day and I really wanted to get out of my comfort zone).</p>
+
+<p>To be honest, I find the lab quite challenging. Mainly because it requires that you already have some background on topics like Constrained and Unconstrained Delegation, Kerberos attacks (Kerberoast, ASPREProast, Golden/Silver Tickets, etc), SQL Server Trusts, Intra-Forest and Inter-Forest Trusts and enumeration&hellip; a lot of enumeration. I can say that I was stuck for several moments precisely because I still did not understand some of these concepts. Either I had some knowledge gap to be filled (which was what happened in most cases) or I hadn&rsquo;t enumerated it well enough.</p>
+
+<p>The 3.5 hours of course material videos will definitely not cover all the content covered by the lab and you will still need to conduct research on your own. Here are some references that were essential for me during the course:</p>
+
+<ul>
+<li>Wagging the Dog: Abusing Resource-Based Constrained Delegation to Attack Active Directory: <a href="https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html">https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html</a> (Must-read!)</li>
+<li>Hacking SQL Server Stored Procedures – Part 2: User Impersonation: <a href="https://blog.netspi.com/hacking-sql-server-stored-procedures-part-2-user-impersonation/">https://blog.netspi.com/hacking-sql-server-stored-procedures-part-2-user-impersonation/</a></li>
+<li>SQL Server – Link… Link… Link… and Shell: How to Hack Database Links in SQL Server!: <a href="https://blog.netspi.com/how-to-hack-database-links-in-sql-server/">https://blog.netspi.com/how-to-hack-database-links-in-sql-server/</a></li>
+<li>S4U2Pwnage: <a href="https://www.harmj0y.net/blog/activedirectory/s4u2pwnage/">https://www.harmj0y.net/blog/activedirectory/s4u2pwnage/</a></li>
+<li>A Guide to Attacking Domain Trusts: <a href="http://www.harmj0y.net/blog/redteaming/a-guide-to-attacking-domain-trusts/">http://www.harmj0y.net/blog/redteaming/a-guide-to-attacking-domain-trusts/</a></li>
+<li>It’s All About Trust – Forging Kerberos Trust Tickets to Spoof Access across Active Directory Trusts: <a href="https://adsecurity.org/?p=1588">https://adsecurity.org/?p=1588</a></li>
+<li>Roasting AS-REPs: <a href="https://www.harmj0y.net/blog/activedirectory/roasting-as-reps/">https://www.harmj0y.net/blog/activedirectory/roasting-as-reps/</a></li>
+</ul>
+
+<p>And some of the main tools I used in the labs:</p>
+
+<ul>
+<li>Mimikatz</li>
+<li>PowerUp, PowerUpSQL</li>
+<li>Rubeus, Kekeo</li>
+<li>Powerview, AD-Module, BloodHound</li>
+<li>Nishang, Powercat</li>
+<li>PowerSploit, Inveigh</li>
+</ul>
+
+<p>If you have been stuck in the lab for days without being able to proceed and running out of ideas, I strongly recommend contacting the support team. Seriously, the guys are fantastic and have an incredible response time. Obviously, they will not provide you with any spoilers, but they will most likely point you to some directions and give you some hints on the path you should take. Any other type of problem, such as a host or service that has stopped responding, do not hesitate to contact them &hellip; usually the problem is solved within few hours (or even minutes).</p>
+
+<p>Even before the 60 days, I was able to compromise all the hosts in the lab and collect all the flags /o/. I scheduled my exam immediately after clearing the lab.</p>
+
+<h2 id="the-exam"><strong>The Exam</strong></h2>
+
+<hr />
+
+<p>Students will have 48 hours to complete the hands-on certification exam, aiming to compromise all 8 servers available in the exam lab. As in the lab, the servers will be spread among forests and will have different configurations. PentesterAcademy claims that if you are unable to compromise all 8 servers, you will still have the chance to pass if you submit a good quality report (for example, a report suggesting practical mitigations and open source tools, citing talks and blog posts, a detailed narrative, etc). Even so, a minimum of 3 compromised machines is required to give you any chance of passing.</p>
+
+<p>I didn&rsquo;t find the exam so difficult, since it is well-aligned with the contents of the lab. I don&rsquo;t intend to give spoilers here, but out of all 8 machines, only one machine made me repeat the enumeration scripts a few times to find a way. It doesn&rsquo;t even compare to the many times I&rsquo;ve been stuck in the lab, running out of ideas for days :&lsquo;(. If you have completed the lab, the 48 hours are likely to be more than enough to compromise all the machines, having enough time to create a good report (IMHO).</p>
+
+<p>A few hours after submitting the report, I received an email confirming my approval:</p>
+
+
+<figure class="figure">
+    <img src="approval.png">
+</figure>
+
+<hr><br>
+  
+  
+  <small><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Last modified: January 31, 2020</small>  
+</hr>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://ferreirasc.github.io/post/spoj_cardapio/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://ferreirasc.github.io/post/spoj_cardapio/">O problema da satisfatibilidade booleana (SAT)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://ferreirasc.github.io/post/ad_notes/">Active Directory Notes</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://ferreirasc.github.io/post/ad_notes/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'ferreirasc';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://ferreirasc.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77924066-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

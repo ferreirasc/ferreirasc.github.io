@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Level on Leonardo Ferreira</title>
+    <link>https://ferreirasc.github.io/level/</link>
+    <description>Recent content in Level on Leonardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 28 May 2020 00:30:20 -0400</lastBuildDate>
+    
+	<atom:link href="https://ferreirasc.github.io/level/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic</title>
+      <link>https://ferreirasc.github.io/level/basic/</link>
+      <pubDate>Thu, 28 May 2020 00:30:20 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/level/basic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intermediate</title>
+      <link>https://ferreirasc.github.io/level/intermediate/</link>
+      <pubDate>Tue, 15 Mar 2016 21:10:20 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/level/intermediate/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

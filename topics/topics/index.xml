@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Topics on Leonardo Ferreira</title>
+    <link>https://ferreirasc.github.io/topics/</link>
+    <description>Recent content in Topics on Leonardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 24 Jun 2014 10:33:23 -0400</lastBuildDate>
+    
+	<atom:link href="https://ferreirasc.github.io/topics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guides</title>
+      <link>https://ferreirasc.github.io/topics/guides/</link>
+      <pubDate>Tue, 24 Jun 2014 10:33:23 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/topics/guides/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introcomp</title>
+      <link>https://ferreirasc.github.io/topics/introcomp/</link>
+      <pubDate>Sat, 12 Apr 2014 18:25:23 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/topics/introcomp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>https://ferreirasc.github.io/topics/notes/</link>
+      <pubDate>Thu, 28 May 2020 00:30:20 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/topics/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://ferreirasc.github.io/topics/programming/</link>
+      <pubDate>Tue, 15 Mar 2016 21:10:20 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/topics/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reviews</title>
+      <link>https://ferreirasc.github.io/topics/reviews/</link>
+      <pubDate>Fri, 31 Jan 2020 01:33:20 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/topics/reviews/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wargames</title>
+      <link>https://ferreirasc.github.io/topics/wargames/</link>
+      <pubDate>Sun, 03 Jan 2016 01:07:23 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/topics/wargames/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

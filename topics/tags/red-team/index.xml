@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Red Team on Leonardo Ferreira</title>
+    <link>https://ferreirasc.github.io/tags/red-team/</link>
+    <description>Recent content in Red Team on Leonardo Ferreira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 28 May 2020 00:30:20 -0400</lastBuildDate>
+    
+	<atom:link href="https://ferreirasc.github.io/tags/red-team/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Active Directory Notes</title>
+      <link>https://ferreirasc.github.io/post/ad_notes/</link>
+      <pubDate>Thu, 28 May 2020 00:30:20 -0400</pubDate>
+      
+      <guid>https://ferreirasc.github.io/post/ad_notes/</guid>
+      <description>&lt;p&gt;AD Notes for Pentesting / RedTeam&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

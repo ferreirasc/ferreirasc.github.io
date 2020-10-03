@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Leonardo Ferreira</title>
-    <link>https://ferreirasc.github.io/</link>
-    <description>Recent content on Leonardo Ferreira</description>
+    <title>Basic on Leonardo Ferreira</title>
+    <link>https://ferreirasc.github.io/level/basic/</link>
+    <description>Recent content in Basic on Leonardo Ferreira</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Thu, 28 May 2020 00:30:20 -0400</lastBuildDate>
     
-	<atom:link href="https://ferreirasc.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ferreirasc.github.io/level/basic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -22,18 +22,6 @@
     </item>
     
     <item>
-      <title>About Me</title>
-      <link>https://ferreirasc.github.io/about/</link>
-      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferreirasc.github.io/about/</guid>
-      <description>Red Teamer, Pentester, addicted to retrogames and a Megaman fan. I am currently work as a pentester / red teamer at iSecurity Consulting.
-Experience  iSecurity Consulting - Oct 2018 - Present (Toronto, Canada Area)
-Red Teamer / Penetration Tester
- Conduct technical vulnerability assessments (TVA) and penetration testing in mobile applications (iOS/Android), web applications/APIs, wireless networks (WLAN), external and internal infrastructures. Performed over a dozen of Red Team exercises on both corporate office and industrial plant locations.</description>
-    </item>
-    
-    <item>
       <title>Certified Red Team Expert (CRTE) - Review</title>
       <link>https://ferreirasc.github.io/post/crte_review/</link>
       <pubDate>Fri, 31 Jan 2020 01:33:20 -0400</pubDate>
@@ -42,15 +30,6 @@ Red Teamer / Penetration Tester
       <description>&lt;p&gt;I recently took the amazing &amp;ldquo;Windows Red Team Lab&amp;rdquo; course from PentesterAcademy, a prerequisite course for the Certified Red Team Expert (CRTE) certification. I must confess that I had my eye on this course for some time, mainly due to the topics covered in its content (anyone who knows me knows how much I like Active Directory exploitation and everything it involves ;). As I was a little tired of the HackTheBox boxes routine, I decided it would be a good time to start the lab and learn new AD stuff.&lt;/p&gt;
 
 &lt;p&gt;The purpose of this review is just to pass on a little of the experience I had in the lab and in the exam. Obviously, I have no intention of providing spoilers, lab walkthrough nor anything like that.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>O problema da satisfatibilidade booleana (SAT)</title>
-      <link>https://ferreirasc.github.io/post/spoj_cardapio/</link>
-      <pubDate>Tue, 15 Mar 2016 21:10:20 -0400</pubDate>
-      
-      <guid>https://ferreirasc.github.io/post/spoj_cardapio/</guid>
-      <description>&lt;p&gt;Na teoria da complexidade computacional, o problema da satisfatibilidade booleana (SAT) é reconhecidamente um dos primeiros NP-completo. O problema visa encontrar uma solução verdade para uma dada fórmula booleana, e caso encontrada, a fórmula é considerada “satisfatível”.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -102,15 +81,6 @@ Red Teamer / Penetration Tester
       
       <guid>https://ferreirasc.github.io/post/introcomp_tutorial01/</guid>
       <description>&lt;p&gt;Uma breve explicação de como preparar seu ambiente, seja Windows ou Linux, para programar utilizando C. Direcionado aos alunos do Introcomp.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://ferreirasc.github.io/contact/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferreirasc.github.io/contact/</guid>
-      <description>You can find me on Telegram: ferreirasc</description>
     </item>
     
   </channel>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  
+  <meta property="og:image" content="https://ferreirasc.github.io/post/introcomp_tutorial01/">
+  <meta property="og:image:type" content="image/jpg">
+  
+  <meta property="og:type" content="article">
+  <meta property="article:author" content="Leonardo Ferreira">
+  
+  <meta property="article:published_time" content="2014-04-12 18:25:23 -0400 -0400">
+  <meta property="fb:app_id" content="128539894229266"/>
+  <meta property="fb:admins" content="1234176778"/>
+  <meta name="generator" content="Hugo 0.53" />
+
+  <title>Programando C em Windows e Linux (Introcomp) &middot; Leonardo Ferreira</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+  <link rel="shortcut icon" href="https://ferreirasc.github.io/img/favicon.ico" type="image/x-icon" />
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+  
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { 
+          equationNumbers: { autoNumber: "AMS" },
+          extensions: ["AMSmath.js", "AMSsymbols.js"] 
+      }
+    },
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" } 
+    }
+});
+  MathJax.Hub.Queue(function() {
+  
+  
+  
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i = 0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script>
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://ferreirasc.github.io/"> ferreirasc:~#</a>
+
+
+
+<a class="pure-menu-heading brand" href="https://ferreirasc.github.io/about"><img class="avatar" src="https://ferreirasc.github.io/avatar.jpg"/></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/about/"><i class='fa fa-user fa-fw'></i>About Me</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/ferreirasc0" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/ferreirasc" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/ferreirasc" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/ferreirasc" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Programando C em Windows e Linux (Introcomp)</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>12 Apr 2014, 18:25</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://ferreirasc.github.io/topics/introcomp">Introcomp</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/introcomp">Introcomp</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/helloworld">HelloWorld</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/devc&#43;&#43;">DevC&#43;&#43;</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/ufes">UFES</a>
+    
+  </div>
+  
+  
+  
+  
+  
+  <div>
+    <i class="fa fa-signal fa-fw"></i>
+      <a class="post-taxonomy-level" href="https://ferreirasc.github.io/level/basic">Basic</a>
+  </div>
+  
+  
+
+</div>
+
+
+  <p>Uma breve explicação de como preparar seu ambiente, seja Windows ou Linux, para programar utilizando C. Direcionado aos alunos do Introcomp.</p>
+
+<h2 id="introdução"><strong>Introdução</strong></h2>
+
+<hr />
+
+<p>** Antes de mais nada: O Introcomp recomenda que os alunos adotem alguma distribuição Linux para acompanhamento do curso, já que essa será a plataforma utilizada nos exemplos dados em todas aulas, seja em laboratório ou sala de aula.</p>
+
+<h3 id="windows"><strong>Windows</strong></h3>
+
+<p>O Introcomp indica dois ambientes de desenvolvimento (ou “IDE”) para programar em C nas plataformas Windows: O CodeBlocks e o DevC++. Como o CodeBlocks já foi explicado em sala de aula, tendo slides dedicados na “Aula 02”, estarei focando este tutorial no setup do DevC++, que na minha opinião é a IDE mais simples para desenvolvimento em C no Windows.</p>
+
+<h4 id="devc-passo-a-passo"><strong>DevC++ - Passo a Passo</strong></h4>
+
+<p>1 - Faça download do DevC++ no link: <a href="https://sourceforge.net/projects/orwelldevcpp/">https://sourceforge.net/projects/orwelldevcpp/</a>. Clicando no link verde escrito download, ele deve se iniciar automaticamente em 5 segundos.</p>
+
+<p>2 - Feito o download, instale o DevC++. A menos que você deseje uma configuração personalizada da IDE, pode dar “Next” em todos os passos da instalação até concluir.</p>
+
+<p>3 - Feito a instalação, você deverá encontrar uma tela como essa:</p>
+
+
+<figure class="figure">
+    <img src="devc&#43;&#43;1.jpg">
+</figure>
+
+
+
+<p>Abra um novo arquivo fonte para começar o desenvolvimento:</p>
+
+
+<figure class="figure">
+    <img src="devc&#43;&#43;2.jpg">
+</figure>
+
+
+
+<p>4 - Salve seu arquivo fonte para que ele possa ser reconhecido como um código em C. Para fazer isso, aperte CTRL+S ou navegue até o menu superior Arquivo-&gt;Salvar Como…</p>
+
+
+<figure class="figure">
+    <img src="devc&#43;&#43;3.jpg">
+</figure>
+
+
+
+<p>A seguinte janela deverá aparecer:</p>
+
+
+<figure class="figure">
+    <img src="devc&#43;&#43;4.jpg">
+</figure>
+
+
+
+<p>Conforme a imagem acima, em Save as type você deverá selecionar “C Source Files (*.c)” e em File name deverá entrar com o nome do seu código, que no meu caso foi “meu_codigo”. Isso fará com que na pasta Desktop, como indicado, seja criado um arquivo chamado “meu_codigo.c”. Clique no botão Save para finalizar.</p>
+
+<p>5 - Tudo pronto pra desenvolver seu código:</p>
+
+
+<figure class="figure">
+    <img src="devc&#43;&#43;5.jpg">
+</figure>
+
+
+
+<p>6 - Para compilar e executar, aperte F11. Ou então, vá até o menu superior na aba Executar e selecione a opção Compilar &amp; Executar. Nesse momento, um arquivo com extensão “.exe” de mesmo nome e na mesma pasta que seu código “.c” será criado. No caso deste exemplo, na pasta Desktop. Uma janela também será vista, com seu código já sendo executado:</p>
+
+
+<figure class="figure">
+    <img src="devc&#43;&#43;6.jpg">
+</figure>
+
+
+
+<h3 id="linux"><strong>Linux</strong></h3>
+
+<p>Para aqueles que desejam programar em C na plataforma Linux, as coisas são ainda mais fáceis. Isso por que a maioria das distribuições Linux já carregam nativamente um compilador da linguagem C: o GCC. :-)</p>
+
+<p>Portanto, para começar a desenvolver, você deverá primeiramente abrir um editor de texto de sua escolha (usarei o gedit) e salvar este arquivo com extensão “.c”, para que ele se torne um código na linguagem C. Neste exemplo, salvei meu arquivo como teste.c no diretório “/home/ferreirasc”.</p>
+
+
+<figure class="figure">
+    <img src="linux_01.png">
+</figure>
+
+
+
+<p>Abra o terminal de sua distribuição Linux (caso seja Ubuntu, Ctrl+ALT+T deverá ser um atalho pra isso) e navegue até a pasta onde foi salvo seu arquivo “.c”. No caso deste exemplo, o arquivo teste.c está localizado em “/home/ferreirasc”, então:</p>
+
+
+<figure class="figure">
+    <img src="linux_02.png">
+</figure>
+
+
+
+<p>Na figura acima, o terminal inicialmente apontava para o diretório “/home”, conforme mostrado pelo comando “pwd” (que me diz para qual diretório meu terminal está apontando no momento). Assim, é preciso navegar até onde o arquivo teste.c está localizado, ou seja, no “/home/ferreirasc”, com o comando “cd”. Isso pode ser visualizado com o comando “pwd” após o “cd”.</p>
+
+<p>Ao listar os arquivos do diretório, com “ls”, o arquivo teste.c estará lá.</p>
+
+<p>Para compilar e executar o arquivo teste.c, conforme visto em sala de aula:</p>
+
+
+<figure class="figure">
+    <img src="linux_03.png">
+</figure>
+
+<hr><br>
+  
+  
+  <small><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Last modified: April 12, 2014</small>  
+</hr>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://ferreirasc.github.io/post/boca_tutorial/">Instalando o sistema BOCA Online Contest</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://ferreirasc.github.io/post/boca_tutorial/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'ferreirasc';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://ferreirasc.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77924066-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

